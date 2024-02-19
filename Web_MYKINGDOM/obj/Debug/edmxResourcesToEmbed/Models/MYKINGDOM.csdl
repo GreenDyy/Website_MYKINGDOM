@@ -1,0 +1,715 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MYKINGDOMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="MYKINGDOMEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ChiTietDonHangs" EntityType="MYKINGDOMModel.ChiTietDonHang" />
+    <EntitySet Name="ChiTietGioHangs" EntityType="MYKINGDOMModel.ChiTietGioHang" />
+    <EntitySet Name="ChiTietHoaDons" EntityType="MYKINGDOMModel.ChiTietHoaDon" />
+    <EntitySet Name="ChiTietHoaDonOfflines" EntityType="MYKINGDOMModel.ChiTietHoaDonOffline" />
+    <EntitySet Name="ChiTietNhapKhoes" EntityType="MYKINGDOMModel.ChiTietNhapKho" />
+    <EntitySet Name="DanhMucSanPhams" EntityType="MYKINGDOMModel.DanhMucSanPham" />
+    <EntitySet Name="DonHangs" EntityType="MYKINGDOMModel.DonHang" />
+    <EntitySet Name="GioHangs" EntityType="MYKINGDOMModel.GioHang" />
+    <EntitySet Name="HoaDons" EntityType="MYKINGDOMModel.HoaDon" />
+    <EntitySet Name="HoaDonOfflines" EntityType="MYKINGDOMModel.HoaDonOffline" />
+    <EntitySet Name="ImageSanPhams" EntityType="MYKINGDOMModel.ImageSanPham" />
+    <EntitySet Name="KhachHangs" EntityType="MYKINGDOMModel.KhachHang" />
+    <EntitySet Name="KhoHangs" EntityType="MYKINGDOMModel.KhoHang" />
+    <EntitySet Name="NhanViens" EntityType="MYKINGDOMModel.NhanVien" />
+    <EntitySet Name="NhapKhoes" EntityType="MYKINGDOMModel.NhapKho" />
+    <EntitySet Name="SanPhams" EntityType="MYKINGDOMModel.SanPham" />
+    <EntitySet Name="TaiKhoanKhachHangs" EntityType="MYKINGDOMModel.TaiKhoanKhachHang" />
+    <EntitySet Name="TaiKhoanNhanViens" EntityType="MYKINGDOMModel.TaiKhoanNhanVien" />
+    <EntitySet Name="ThuongHieux" EntityType="MYKINGDOMModel.ThuongHieu" />
+    <EntitySet Name="Vouchers" EntityType="MYKINGDOMModel.Voucher" />
+    <EntitySet Name="VoucherKhachHangs" EntityType="MYKINGDOMModel.VoucherKhachHang" />
+    <AssociationSet Name="FK__ChiTietDo__MaDon__571DF1D5" Association="MYKINGDOMModel.FK__ChiTietDo__MaDon__571DF1D5">
+      <End Role="DonHang" EntitySet="DonHangs" />
+      <End Role="ChiTietDonHang" EntitySet="ChiTietDonHangs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ChiTietDo__MaSan__5812160E" Association="MYKINGDOMModel.FK__ChiTietDo__MaSan__5812160E">
+      <End Role="SanPham" EntitySet="SanPhams" />
+      <End Role="ChiTietDonHang" EntitySet="ChiTietDonHangs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MaGioHang_CTGH" Association="MYKINGDOMModel.FK_MaGioHang_CTGH">
+      <End Role="GioHang" EntitySet="GioHangs" />
+      <End Role="ChiTietGioHang" EntitySet="ChiTietGioHangs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MaSanPham_CTGH" Association="MYKINGDOMModel.FK_MaSanPham_CTGH">
+      <End Role="SanPham" EntitySet="SanPhams" />
+      <End Role="ChiTietGioHang" EntitySet="ChiTietGioHangs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ChiTietHo__MaHoa__76969D2E" Association="MYKINGDOMModel.FK__ChiTietHo__MaHoa__76969D2E">
+      <End Role="HoaDon" EntitySet="HoaDons" />
+      <End Role="ChiTietHoaDon" EntitySet="ChiTietHoaDons" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ChiTietHo__MaSan__778AC167" Association="MYKINGDOMModel.FK__ChiTietHo__MaSan__778AC167">
+      <End Role="SanPham" EntitySet="SanPhams" />
+      <End Role="ChiTietHoaDon" EntitySet="ChiTietHoaDons" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ChiTietHo__MaHoa__7F2BE32F" Association="MYKINGDOMModel.FK__ChiTietHo__MaHoa__7F2BE32F">
+      <End Role="HoaDonOffline" EntitySet="HoaDonOfflines" />
+      <End Role="ChiTietHoaDonOffline" EntitySet="ChiTietHoaDonOfflines" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ChiTietHo__MaSan__00200768" Association="MYKINGDOMModel.FK__ChiTietHo__MaSan__00200768">
+      <End Role="SanPham" EntitySet="SanPhams" />
+      <End Role="ChiTietHoaDonOffline" EntitySet="ChiTietHoaDonOfflines" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ChiTietNh__MaNha__5EBF139D" Association="MYKINGDOMModel.FK__ChiTietNh__MaNha__5EBF139D">
+      <End Role="NhapKho" EntitySet="NhapKhoes" />
+      <End Role="ChiTietNhapKho" EntitySet="ChiTietNhapKhoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ChiTietNh__MaSan__5FB337D6" Association="MYKINGDOMModel.FK__ChiTietNh__MaSan__5FB337D6">
+      <End Role="SanPham" EntitySet="SanPhams" />
+      <End Role="ChiTietNhapKho" EntitySet="ChiTietNhapKhoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MaDanhMuc_SP" Association="MYKINGDOMModel.FK_MaDanhMuc_SP">
+      <End Role="DanhMucSanPham" EntitySet="DanhMucSanPhams" />
+      <End Role="SanPham" EntitySet="SanPhams" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DonHang__MaKhach__52593CB8" Association="MYKINGDOMModel.FK__DonHang__MaKhach__52593CB8">
+      <End Role="KhachHang" EntitySet="KhachHangs" />
+      <End Role="DonHang" EntitySet="DonHangs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DonHang__MaNhanV__534D60F1" Association="MYKINGDOMModel.FK__DonHang__MaNhanV__534D60F1">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="DonHang" EntitySet="DonHangs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DonHang__MaVouch__5441852A" Association="MYKINGDOMModel.FK__DonHang__MaVouch__5441852A">
+      <End Role="Voucher" EntitySet="Vouchers" />
+      <End Role="DonHang" EntitySet="DonHangs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HoaDon__MaDonHan__71D1E811" Association="MYKINGDOMModel.FK__HoaDon__MaDonHan__71D1E811">
+      <End Role="DonHang" EntitySet="DonHangs" />
+      <End Role="HoaDon" EntitySet="HoaDons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MaKhachHang_GH" Association="MYKINGDOMModel.FK_MaKhachHang_GH">
+      <End Role="KhachHang" EntitySet="KhachHangs" />
+      <End Role="GioHang" EntitySet="GioHangs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HoaDon__MaKhachH__73BA3083" Association="MYKINGDOMModel.FK__HoaDon__MaKhachH__73BA3083">
+      <End Role="KhachHang" EntitySet="KhachHangs" />
+      <End Role="HoaDon" EntitySet="HoaDons" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HoaDon__MaNhanVi__72C60C4A" Association="MYKINGDOMModel.FK__HoaDon__MaNhanVi__72C60C4A">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="HoaDon" EntitySet="HoaDons" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HoaDonOff__MaNha__7C4F7684" Association="MYKINGDOMModel.FK__HoaDonOff__MaNha__7C4F7684">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="HoaDonOffline" EntitySet="HoaDonOfflines" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MaSanPham_SP" Association="MYKINGDOMModel.FK_MaSanPham_SP">
+      <End Role="SanPham" EntitySet="SanPhams" />
+      <End Role="ImageSanPham" EntitySet="ImageSanPhams" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TaiKhoanK__MaKha__44FF419A" Association="MYKINGDOMModel.FK__TaiKhoanK__MaKha__44FF419A">
+      <End Role="KhachHang" EntitySet="KhachHangs" />
+      <End Role="TaiKhoanKhachHang" EntitySet="TaiKhoanKhachHangs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__VoucherKh__MaKha__4E88ABD4" Association="MYKINGDOMModel.FK__VoucherKh__MaKha__4E88ABD4">
+      <End Role="KhachHang" EntitySet="KhachHangs" />
+      <End Role="VoucherKhachHang" EntitySet="VoucherKhachHangs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__KhoHang__MaSanPh__6477ECF3" Association="MYKINGDOMModel.FK__KhoHang__MaSanPh__6477ECF3">
+      <End Role="SanPham" EntitySet="SanPhams" />
+      <End Role="KhoHang" EntitySet="KhoHangs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NhapKho__TrangTh__5BE2A6F2" Association="MYKINGDOMModel.FK__NhapKho__TrangTh__5BE2A6F2">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="NhapKho" EntitySet="NhapKhoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TaiKhoanN__MaNha__68487DD7" Association="MYKINGDOMModel.FK__TaiKhoanN__MaNha__68487DD7">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="TaiKhoanNhanVien" EntitySet="TaiKhoanNhanViens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MaThuongHieu_SP" Association="MYKINGDOMModel.FK_MaThuongHieu_SP">
+      <End Role="ThuongHieu" EntitySet="ThuongHieux" />
+      <End Role="SanPham" EntitySet="SanPhams" />
+    </AssociationSet>
+    <AssociationSet Name="FK__VoucherKh__MaVou__4F7CD00D" Association="MYKINGDOMModel.FK__VoucherKh__MaVou__4F7CD00D">
+      <End Role="Voucher" EntitySet="Vouchers" />
+      <End Role="VoucherKhachHang" EntitySet="VoucherKhachHangs" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ChiTietDonHang">
+    <Key>
+      <PropertyRef Name="MaChiTietDonHang" />
+    </Key>
+    <Property Name="MaChiTietDonHang" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaDonHang" Type="Int32" />
+    <Property Name="MaSanPham" Type="Int32" />
+    <Property Name="SoLuong" Type="Int32" Nullable="false" />
+    <Property Name="Gia" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <NavigationProperty Name="DonHang" Relationship="MYKINGDOMModel.FK__ChiTietDo__MaDon__571DF1D5" FromRole="ChiTietDonHang" ToRole="DonHang" />
+    <NavigationProperty Name="SanPham" Relationship="MYKINGDOMModel.FK__ChiTietDo__MaSan__5812160E" FromRole="ChiTietDonHang" ToRole="SanPham" />
+  </EntityType>
+  <EntityType Name="ChiTietGioHang">
+    <Key>
+      <PropertyRef Name="MaChiTietGioHang" />
+    </Key>
+    <Property Name="MaChiTietGioHang" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaGioHang" Type="Int32" />
+    <Property Name="MaSanPham" Type="Int32" />
+    <Property Name="SoLuong" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="GioHang" Relationship="MYKINGDOMModel.FK_MaGioHang_CTGH" FromRole="ChiTietGioHang" ToRole="GioHang" />
+    <NavigationProperty Name="SanPham" Relationship="MYKINGDOMModel.FK_MaSanPham_CTGH" FromRole="ChiTietGioHang" ToRole="SanPham" />
+  </EntityType>
+  <EntityType Name="ChiTietHoaDon">
+    <Key>
+      <PropertyRef Name="MaChiTietHoaDon" />
+    </Key>
+    <Property Name="MaChiTietHoaDon" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaHoaDon" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MaSanPham" Type="Int32" />
+    <Property Name="SoLuong" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="HoaDon" Relationship="MYKINGDOMModel.FK__ChiTietHo__MaHoa__76969D2E" FromRole="ChiTietHoaDon" ToRole="HoaDon" />
+    <NavigationProperty Name="SanPham" Relationship="MYKINGDOMModel.FK__ChiTietHo__MaSan__778AC167" FromRole="ChiTietHoaDon" ToRole="SanPham" />
+  </EntityType>
+  <EntityType Name="ChiTietHoaDonOffline">
+    <Key>
+      <PropertyRef Name="MaChiTietHoaDon" />
+    </Key>
+    <Property Name="MaChiTietHoaDon" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaHoaDon" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MaSanPham" Type="Int32" />
+    <Property Name="SoLuong" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="HoaDonOffline" Relationship="MYKINGDOMModel.FK__ChiTietHo__MaHoa__7F2BE32F" FromRole="ChiTietHoaDonOffline" ToRole="HoaDonOffline" />
+    <NavigationProperty Name="SanPham" Relationship="MYKINGDOMModel.FK__ChiTietHo__MaSan__00200768" FromRole="ChiTietHoaDonOffline" ToRole="SanPham" />
+  </EntityType>
+  <EntityType Name="ChiTietNhapKho">
+    <Key>
+      <PropertyRef Name="MaChiTietNhapKho" />
+    </Key>
+    <Property Name="MaChiTietNhapKho" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaNhapKho" Type="Int32" />
+    <Property Name="MaSanPham" Type="Int32" />
+    <Property Name="SoLuongNhapKho" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NhapKho" Relationship="MYKINGDOMModel.FK__ChiTietNh__MaNha__5EBF139D" FromRole="ChiTietNhapKho" ToRole="NhapKho" />
+    <NavigationProperty Name="SanPham" Relationship="MYKINGDOMModel.FK__ChiTietNh__MaSan__5FB337D6" FromRole="ChiTietNhapKho" ToRole="SanPham" />
+  </EntityType>
+  <EntityType Name="DanhMucSanPham">
+    <Key>
+      <PropertyRef Name="MaDanhMuc" />
+    </Key>
+    <Property Name="MaDanhMuc" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenDanhMuc" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ImageDanhMuc" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="SanPhams" Relationship="MYKINGDOMModel.FK_MaDanhMuc_SP" FromRole="DanhMucSanPham" ToRole="SanPham" />
+  </EntityType>
+  <EntityType Name="DonHang">
+    <Key>
+      <PropertyRef Name="MaDonHang" />
+    </Key>
+    <Property Name="MaDonHang" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaKhachHang" Type="Int32" />
+    <Property Name="MaNhanVien" Type="Int32" />
+    <Property Name="NgayDatHang" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TongTien" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="MaVoucher" Type="Int32" />
+    <Property Name="TrangThai" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GhiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ChiTietDonHangs" Relationship="MYKINGDOMModel.FK__ChiTietDo__MaDon__571DF1D5" FromRole="DonHang" ToRole="ChiTietDonHang" />
+    <NavigationProperty Name="KhachHang" Relationship="MYKINGDOMModel.FK__DonHang__MaKhach__52593CB8" FromRole="DonHang" ToRole="KhachHang" />
+    <NavigationProperty Name="NhanVien" Relationship="MYKINGDOMModel.FK__DonHang__MaNhanV__534D60F1" FromRole="DonHang" ToRole="NhanVien" />
+    <NavigationProperty Name="Voucher" Relationship="MYKINGDOMModel.FK__DonHang__MaVouch__5441852A" FromRole="DonHang" ToRole="Voucher" />
+    <NavigationProperty Name="HoaDons" Relationship="MYKINGDOMModel.FK__HoaDon__MaDonHan__71D1E811" FromRole="DonHang" ToRole="HoaDon" />
+  </EntityType>
+  <EntityType Name="GioHang">
+    <Key>
+      <PropertyRef Name="MaGioHang" />
+    </Key>
+    <Property Name="MaGioHang" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaKhachHang" Type="Int32" />
+    <Property Name="TongSoLuongSP" Type="Int32" />
+    <NavigationProperty Name="ChiTietGioHangs" Relationship="MYKINGDOMModel.FK_MaGioHang_CTGH" FromRole="GioHang" ToRole="ChiTietGioHang" />
+    <NavigationProperty Name="KhachHang" Relationship="MYKINGDOMModel.FK_MaKhachHang_GH" FromRole="GioHang" ToRole="KhachHang" />
+  </EntityType>
+  <EntityType Name="HoaDon">
+    <Key>
+      <PropertyRef Name="MaHoaDon" />
+    </Key>
+    <Property Name="MaHoaDon" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MaDonHang" Type="Int32" />
+    <Property Name="MaNhanVien" Type="Int32" />
+    <Property Name="MaKhachHang" Type="Int32" />
+    <Property Name="NgayLap" Type="DateTime" Precision="3" />
+    <Property Name="TrangThai" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="TongTien" Type="Double" />
+    <NavigationProperty Name="ChiTietHoaDons" Relationship="MYKINGDOMModel.FK__ChiTietHo__MaHoa__76969D2E" FromRole="HoaDon" ToRole="ChiTietHoaDon" />
+    <NavigationProperty Name="DonHang" Relationship="MYKINGDOMModel.FK__HoaDon__MaDonHan__71D1E811" FromRole="HoaDon" ToRole="DonHang" />
+    <NavigationProperty Name="KhachHang" Relationship="MYKINGDOMModel.FK__HoaDon__MaKhachH__73BA3083" FromRole="HoaDon" ToRole="KhachHang" />
+    <NavigationProperty Name="NhanVien" Relationship="MYKINGDOMModel.FK__HoaDon__MaNhanVi__72C60C4A" FromRole="HoaDon" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="HoaDonOffline">
+    <Key>
+      <PropertyRef Name="MaHoaDon" />
+    </Key>
+    <Property Name="MaHoaDon" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MaNhanVien" Type="Int32" />
+    <Property Name="NgayLap" Type="DateTime" Precision="3" />
+    <Property Name="TrangThai" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="TongTien" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="ChiTietHoaDonOfflines" Relationship="MYKINGDOMModel.FK__ChiTietHo__MaHoa__7F2BE32F" FromRole="HoaDonOffline" ToRole="ChiTietHoaDonOffline" />
+    <NavigationProperty Name="NhanVien" Relationship="MYKINGDOMModel.FK__HoaDonOff__MaNha__7C4F7684" FromRole="HoaDonOffline" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="ImageSanPham">
+    <Key>
+      <PropertyRef Name="ImageID" />
+    </Key>
+    <Property Name="ImageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaSanPham" Type="Int32" Nullable="false" />
+    <Property Name="ImageURL" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="SanPham" Relationship="MYKINGDOMModel.FK_MaSanPham_SP" FromRole="ImageSanPham" ToRole="SanPham" />
+  </EntityType>
+  <EntityType Name="KhachHang">
+    <Key>
+      <PropertyRef Name="MaKhachHang" />
+    </Key>
+    <Property Name="MaKhachHang" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HoTenDem" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Ten" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="SoDienThoai" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DiaChi" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DonHangs" Relationship="MYKINGDOMModel.FK__DonHang__MaKhach__52593CB8" FromRole="KhachHang" ToRole="DonHang" />
+    <NavigationProperty Name="GioHangs" Relationship="MYKINGDOMModel.FK_MaKhachHang_GH" FromRole="KhachHang" ToRole="GioHang" />
+    <NavigationProperty Name="HoaDons" Relationship="MYKINGDOMModel.FK__HoaDon__MaKhachH__73BA3083" FromRole="KhachHang" ToRole="HoaDon" />
+    <NavigationProperty Name="TaiKhoanKhachHangs" Relationship="MYKINGDOMModel.FK__TaiKhoanK__MaKha__44FF419A" FromRole="KhachHang" ToRole="TaiKhoanKhachHang" />
+    <NavigationProperty Name="VoucherKhachHangs" Relationship="MYKINGDOMModel.FK__VoucherKh__MaKha__4E88ABD4" FromRole="KhachHang" ToRole="VoucherKhachHang" />
+  </EntityType>
+  <EntityType Name="KhoHang">
+    <Key>
+      <PropertyRef Name="MaKhoHang" />
+    </Key>
+    <Property Name="MaKhoHang" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaSanPham" Type="Int32" Nullable="false" />
+    <Property Name="SoLuongTonKho" Type="Int32" />
+    <NavigationProperty Name="SanPham" Relationship="MYKINGDOMModel.FK__KhoHang__MaSanPh__6477ECF3" FromRole="KhoHang" ToRole="SanPham" />
+  </EntityType>
+  <EntityType Name="NhanVien">
+    <Key>
+      <PropertyRef Name="MaNhanVien" />
+    </Key>
+    <Property Name="MaNhanVien" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HoTen" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="NgaySinh" Type="DateTime" Precision="0" />
+    <Property Name="SoDienThoai" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CCCD" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="DiaChi" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DonHangs" Relationship="MYKINGDOMModel.FK__DonHang__MaNhanV__534D60F1" FromRole="NhanVien" ToRole="DonHang" />
+    <NavigationProperty Name="HoaDons" Relationship="MYKINGDOMModel.FK__HoaDon__MaNhanVi__72C60C4A" FromRole="NhanVien" ToRole="HoaDon" />
+    <NavigationProperty Name="HoaDonOfflines" Relationship="MYKINGDOMModel.FK__HoaDonOff__MaNha__7C4F7684" FromRole="NhanVien" ToRole="HoaDonOffline" />
+    <NavigationProperty Name="NhapKhoes" Relationship="MYKINGDOMModel.FK__NhapKho__TrangTh__5BE2A6F2" FromRole="NhanVien" ToRole="NhapKho" />
+    <NavigationProperty Name="TaiKhoanNhanVien" Relationship="MYKINGDOMModel.FK__TaiKhoanN__MaNha__68487DD7" FromRole="NhanVien" ToRole="TaiKhoanNhanVien" />
+  </EntityType>
+  <EntityType Name="NhapKho">
+    <Key>
+      <PropertyRef Name="MaNhapKho" />
+    </Key>
+    <Property Name="MaNhapKho" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaNhanVien" Type="Int32" />
+    <Property Name="NgayNhapKho" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TrangThai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ChiTietNhapKhoes" Relationship="MYKINGDOMModel.FK__ChiTietNh__MaNha__5EBF139D" FromRole="NhapKho" ToRole="ChiTietNhapKho" />
+    <NavigationProperty Name="NhanVien" Relationship="MYKINGDOMModel.FK__NhapKho__TrangTh__5BE2A6F2" FromRole="NhapKho" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="SanPham">
+    <Key>
+      <PropertyRef Name="MaSanPham" />
+    </Key>
+    <Property Name="MaSanPham" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenSanPham" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="GioiTinh" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="XuatXu" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="MoTa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GiaGoc" Type="Double" Nullable="false" />
+    <Property Name="GiaGiam" Type="Double" Nullable="false" />
+    <Property Name="MaDanhMuc" Type="Int32" />
+    <Property Name="MaThuongHieu" Type="Int32" />
+    <NavigationProperty Name="ChiTietDonHangs" Relationship="MYKINGDOMModel.FK__ChiTietDo__MaSan__5812160E" FromRole="SanPham" ToRole="ChiTietDonHang" />
+    <NavigationProperty Name="ChiTietGioHangs" Relationship="MYKINGDOMModel.FK_MaSanPham_CTGH" FromRole="SanPham" ToRole="ChiTietGioHang" />
+    <NavigationProperty Name="ChiTietHoaDons" Relationship="MYKINGDOMModel.FK__ChiTietHo__MaSan__778AC167" FromRole="SanPham" ToRole="ChiTietHoaDon" />
+    <NavigationProperty Name="ChiTietHoaDonOfflines" Relationship="MYKINGDOMModel.FK__ChiTietHo__MaSan__00200768" FromRole="SanPham" ToRole="ChiTietHoaDonOffline" />
+    <NavigationProperty Name="ChiTietNhapKhoes" Relationship="MYKINGDOMModel.FK__ChiTietNh__MaSan__5FB337D6" FromRole="SanPham" ToRole="ChiTietNhapKho" />
+    <NavigationProperty Name="DanhMucSanPham" Relationship="MYKINGDOMModel.FK_MaDanhMuc_SP" FromRole="SanPham" ToRole="DanhMucSanPham" />
+    <NavigationProperty Name="ImageSanPhams" Relationship="MYKINGDOMModel.FK_MaSanPham_SP" FromRole="SanPham" ToRole="ImageSanPham" />
+    <NavigationProperty Name="KhoHangs" Relationship="MYKINGDOMModel.FK__KhoHang__MaSanPh__6477ECF3" FromRole="SanPham" ToRole="KhoHang" />
+    <NavigationProperty Name="ThuongHieu" Relationship="MYKINGDOMModel.FK_MaThuongHieu_SP" FromRole="SanPham" ToRole="ThuongHieu" />
+  </EntityType>
+  <EntityType Name="TaiKhoanKhachHang">
+    <Key>
+      <PropertyRef Name="MaTaiKhoan" />
+    </Key>
+    <Property Name="MaTaiKhoan" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TaiKhoan" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MatKhau" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MaKhachHang" Type="Int32" Nullable="false" />
+    <Property Name="HoatDong" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="KhachHang" Relationship="MYKINGDOMModel.FK__TaiKhoanK__MaKha__44FF419A" FromRole="TaiKhoanKhachHang" ToRole="KhachHang" />
+  </EntityType>
+  <EntityType Name="TaiKhoanNhanVien">
+    <Key>
+      <PropertyRef Name="MaNhanVien" />
+    </Key>
+    <Property Name="MaNhanVien" Type="Int32" Nullable="false" />
+    <Property Name="TaiKhoan" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MatKhau" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="HoatDong" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Quyen" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NhanVien" Relationship="MYKINGDOMModel.FK__TaiKhoanN__MaNha__68487DD7" FromRole="TaiKhoanNhanVien" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="ThuongHieu">
+    <Key>
+      <PropertyRef Name="MaThuongHieu" />
+    </Key>
+    <Property Name="MaThuongHieu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenThuongHieu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="SanPhams" Relationship="MYKINGDOMModel.FK_MaThuongHieu_SP" FromRole="ThuongHieu" ToRole="SanPham" />
+  </EntityType>
+  <EntityType Name="Voucher">
+    <Key>
+      <PropertyRef Name="MaVoucher" />
+    </Key>
+    <Property Name="MaVoucher" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="GiamGia" Type="Int32" />
+    <Property Name="NgayHetHan" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="DonHangs" Relationship="MYKINGDOMModel.FK__DonHang__MaVouch__5441852A" FromRole="Voucher" ToRole="DonHang" />
+    <NavigationProperty Name="VoucherKhachHangs" Relationship="MYKINGDOMModel.FK__VoucherKh__MaVou__4F7CD00D" FromRole="Voucher" ToRole="VoucherKhachHang" />
+  </EntityType>
+  <EntityType Name="VoucherKhachHang">
+    <Key>
+      <PropertyRef Name="MaVoucherKhachHang" />
+    </Key>
+    <Property Name="MaVoucherKhachHang" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaKhachHang" Type="Int32" />
+    <Property Name="MaVoucher" Type="Int32" />
+    <NavigationProperty Name="KhachHang" Relationship="MYKINGDOMModel.FK__VoucherKh__MaKha__4E88ABD4" FromRole="VoucherKhachHang" ToRole="KhachHang" />
+    <NavigationProperty Name="Voucher" Relationship="MYKINGDOMModel.FK__VoucherKh__MaVou__4F7CD00D" FromRole="VoucherKhachHang" ToRole="Voucher" />
+  </EntityType>
+  <Association Name="FK__ChiTietDo__MaDon__571DF1D5">
+    <End Type="MYKINGDOMModel.DonHang" Role="DonHang" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.ChiTietDonHang" Role="ChiTietDonHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DonHang">
+        <PropertyRef Name="MaDonHang" />
+      </Principal>
+      <Dependent Role="ChiTietDonHang">
+        <PropertyRef Name="MaDonHang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ChiTietDo__MaSan__5812160E">
+    <End Type="MYKINGDOMModel.SanPham" Role="SanPham" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.ChiTietDonHang" Role="ChiTietDonHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SanPham">
+        <PropertyRef Name="MaSanPham" />
+      </Principal>
+      <Dependent Role="ChiTietDonHang">
+        <PropertyRef Name="MaSanPham" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MaGioHang_CTGH">
+    <End Type="MYKINGDOMModel.GioHang" Role="GioHang" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.ChiTietGioHang" Role="ChiTietGioHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GioHang">
+        <PropertyRef Name="MaGioHang" />
+      </Principal>
+      <Dependent Role="ChiTietGioHang">
+        <PropertyRef Name="MaGioHang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MaSanPham_CTGH">
+    <End Type="MYKINGDOMModel.SanPham" Role="SanPham" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.ChiTietGioHang" Role="ChiTietGioHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SanPham">
+        <PropertyRef Name="MaSanPham" />
+      </Principal>
+      <Dependent Role="ChiTietGioHang">
+        <PropertyRef Name="MaSanPham" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ChiTietHo__MaHoa__76969D2E">
+    <End Type="MYKINGDOMModel.HoaDon" Role="HoaDon" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.ChiTietHoaDon" Role="ChiTietHoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoaDon">
+        <PropertyRef Name="MaHoaDon" />
+      </Principal>
+      <Dependent Role="ChiTietHoaDon">
+        <PropertyRef Name="MaHoaDon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ChiTietHo__MaSan__778AC167">
+    <End Type="MYKINGDOMModel.SanPham" Role="SanPham" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.ChiTietHoaDon" Role="ChiTietHoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SanPham">
+        <PropertyRef Name="MaSanPham" />
+      </Principal>
+      <Dependent Role="ChiTietHoaDon">
+        <PropertyRef Name="MaSanPham" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ChiTietHo__MaHoa__7F2BE32F">
+    <End Type="MYKINGDOMModel.HoaDonOffline" Role="HoaDonOffline" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.ChiTietHoaDonOffline" Role="ChiTietHoaDonOffline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoaDonOffline">
+        <PropertyRef Name="MaHoaDon" />
+      </Principal>
+      <Dependent Role="ChiTietHoaDonOffline">
+        <PropertyRef Name="MaHoaDon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ChiTietHo__MaSan__00200768">
+    <End Type="MYKINGDOMModel.SanPham" Role="SanPham" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.ChiTietHoaDonOffline" Role="ChiTietHoaDonOffline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SanPham">
+        <PropertyRef Name="MaSanPham" />
+      </Principal>
+      <Dependent Role="ChiTietHoaDonOffline">
+        <PropertyRef Name="MaSanPham" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ChiTietNh__MaNha__5EBF139D">
+    <End Type="MYKINGDOMModel.NhapKho" Role="NhapKho" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.ChiTietNhapKho" Role="ChiTietNhapKho" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhapKho">
+        <PropertyRef Name="MaNhapKho" />
+      </Principal>
+      <Dependent Role="ChiTietNhapKho">
+        <PropertyRef Name="MaNhapKho" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ChiTietNh__MaSan__5FB337D6">
+    <End Type="MYKINGDOMModel.SanPham" Role="SanPham" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.ChiTietNhapKho" Role="ChiTietNhapKho" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SanPham">
+        <PropertyRef Name="MaSanPham" />
+      </Principal>
+      <Dependent Role="ChiTietNhapKho">
+        <PropertyRef Name="MaSanPham" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MaDanhMuc_SP">
+    <End Type="MYKINGDOMModel.DanhMucSanPham" Role="DanhMucSanPham" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.SanPham" Role="SanPham" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DanhMucSanPham">
+        <PropertyRef Name="MaDanhMuc" />
+      </Principal>
+      <Dependent Role="SanPham">
+        <PropertyRef Name="MaDanhMuc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DonHang__MaKhach__52593CB8">
+    <End Type="MYKINGDOMModel.KhachHang" Role="KhachHang" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.DonHang" Role="DonHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhachHang">
+        <PropertyRef Name="MaKhachHang" />
+      </Principal>
+      <Dependent Role="DonHang">
+        <PropertyRef Name="MaKhachHang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DonHang__MaNhanV__534D60F1">
+    <End Type="MYKINGDOMModel.NhanVien" Role="NhanVien" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.DonHang" Role="DonHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="MaNhanVien" />
+      </Principal>
+      <Dependent Role="DonHang">
+        <PropertyRef Name="MaNhanVien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DonHang__MaVouch__5441852A">
+    <End Type="MYKINGDOMModel.Voucher" Role="Voucher" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.DonHang" Role="DonHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Voucher">
+        <PropertyRef Name="MaVoucher" />
+      </Principal>
+      <Dependent Role="DonHang">
+        <PropertyRef Name="MaVoucher" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HoaDon__MaDonHan__71D1E811">
+    <End Type="MYKINGDOMModel.DonHang" Role="DonHang" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.HoaDon" Role="HoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DonHang">
+        <PropertyRef Name="MaDonHang" />
+      </Principal>
+      <Dependent Role="HoaDon">
+        <PropertyRef Name="MaDonHang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MaKhachHang_GH">
+    <End Type="MYKINGDOMModel.KhachHang" Role="KhachHang" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.GioHang" Role="GioHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhachHang">
+        <PropertyRef Name="MaKhachHang" />
+      </Principal>
+      <Dependent Role="GioHang">
+        <PropertyRef Name="MaKhachHang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HoaDon__MaKhachH__73BA3083">
+    <End Type="MYKINGDOMModel.KhachHang" Role="KhachHang" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.HoaDon" Role="HoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhachHang">
+        <PropertyRef Name="MaKhachHang" />
+      </Principal>
+      <Dependent Role="HoaDon">
+        <PropertyRef Name="MaKhachHang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HoaDon__MaNhanVi__72C60C4A">
+    <End Type="MYKINGDOMModel.NhanVien" Role="NhanVien" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.HoaDon" Role="HoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="MaNhanVien" />
+      </Principal>
+      <Dependent Role="HoaDon">
+        <PropertyRef Name="MaNhanVien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HoaDonOff__MaNha__7C4F7684">
+    <End Type="MYKINGDOMModel.NhanVien" Role="NhanVien" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.HoaDonOffline" Role="HoaDonOffline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="MaNhanVien" />
+      </Principal>
+      <Dependent Role="HoaDonOffline">
+        <PropertyRef Name="MaNhanVien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MaSanPham_SP">
+    <End Type="MYKINGDOMModel.SanPham" Role="SanPham" Multiplicity="1" />
+    <End Type="MYKINGDOMModel.ImageSanPham" Role="ImageSanPham" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SanPham">
+        <PropertyRef Name="MaSanPham" />
+      </Principal>
+      <Dependent Role="ImageSanPham">
+        <PropertyRef Name="MaSanPham" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TaiKhoanK__MaKha__44FF419A">
+    <End Type="MYKINGDOMModel.KhachHang" Role="KhachHang" Multiplicity="1" />
+    <End Type="MYKINGDOMModel.TaiKhoanKhachHang" Role="TaiKhoanKhachHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhachHang">
+        <PropertyRef Name="MaKhachHang" />
+      </Principal>
+      <Dependent Role="TaiKhoanKhachHang">
+        <PropertyRef Name="MaKhachHang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__VoucherKh__MaKha__4E88ABD4">
+    <End Type="MYKINGDOMModel.KhachHang" Role="KhachHang" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.VoucherKhachHang" Role="VoucherKhachHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhachHang">
+        <PropertyRef Name="MaKhachHang" />
+      </Principal>
+      <Dependent Role="VoucherKhachHang">
+        <PropertyRef Name="MaKhachHang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__KhoHang__MaSanPh__6477ECF3">
+    <End Type="MYKINGDOMModel.SanPham" Role="SanPham" Multiplicity="1" />
+    <End Type="MYKINGDOMModel.KhoHang" Role="KhoHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SanPham">
+        <PropertyRef Name="MaSanPham" />
+      </Principal>
+      <Dependent Role="KhoHang">
+        <PropertyRef Name="MaSanPham" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NhapKho__TrangTh__5BE2A6F2">
+    <End Type="MYKINGDOMModel.NhanVien" Role="NhanVien" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.NhapKho" Role="NhapKho" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="MaNhanVien" />
+      </Principal>
+      <Dependent Role="NhapKho">
+        <PropertyRef Name="MaNhanVien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TaiKhoanN__MaNha__68487DD7">
+    <End Type="MYKINGDOMModel.NhanVien" Role="NhanVien" Multiplicity="1" />
+    <End Type="MYKINGDOMModel.TaiKhoanNhanVien" Role="TaiKhoanNhanVien" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="MaNhanVien" />
+      </Principal>
+      <Dependent Role="TaiKhoanNhanVien">
+        <PropertyRef Name="MaNhanVien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MaThuongHieu_SP">
+    <End Type="MYKINGDOMModel.ThuongHieu" Role="ThuongHieu" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.SanPham" Role="SanPham" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ThuongHieu">
+        <PropertyRef Name="MaThuongHieu" />
+      </Principal>
+      <Dependent Role="SanPham">
+        <PropertyRef Name="MaThuongHieu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__VoucherKh__MaVou__4F7CD00D">
+    <End Type="MYKINGDOMModel.Voucher" Role="Voucher" Multiplicity="0..1" />
+    <End Type="MYKINGDOMModel.VoucherKhachHang" Role="VoucherKhachHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Voucher">
+        <PropertyRef Name="MaVoucher" />
+      </Principal>
+      <Dependent Role="VoucherKhachHang">
+        <PropertyRef Name="MaVoucher" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

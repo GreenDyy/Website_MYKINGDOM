@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Thanh toán thành công";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="text-center">
+    @if (TempData["LoiThanhToan"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["LoiThanhToan"]
+        </div>
+    }
+
+    <div class="mt-3">
+        <a class="btn btn-outline-success rounded-5" style="width: 200px" href="@Url.Action("XemDonHang", "Order")">Xem đơn hàng</a>
+    </div>
+</div>
+

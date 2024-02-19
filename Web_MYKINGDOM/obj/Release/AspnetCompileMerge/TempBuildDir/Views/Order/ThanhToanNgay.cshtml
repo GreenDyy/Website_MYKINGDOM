@@ -1,0 +1,147 @@
+﻿
+@{
+    ViewBag.Title = "Order";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Web_MYKINGDOM.ViewModels.ThanhToanNgayDataView
+@using (Html.BeginForm("ThanhToanNgay", "Order", FormMethod.Post, new { @class = "mx-auto" }))
+{
+    <div class="row">
+
+        <!--bên trái-->
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="row">
+                <div class="col-6">
+                    <h4><i class="fas fa-home"></i> Thông tin giao hàng</h4>
+                    <p><b>Tên khách hàng: </b>@Model.tenKhachHang</p>
+                    <p><b>Số điện thoại: </b>@Model.khachHang.SoDienThoai</p>
+                    <p><b>Email: </b>@Model.khachHang.Email</p>
+                    <p><b>Địa chỉ giao hàng: </b>@Model.khachHang.DiaChi</p>
+                </div>
+                <div class="col-6 my-auto">
+                    <a class="btn btn-outline-success" href="@Url.Action("EditUser", "User")">Sửa thông tin giao hàng</a>
+                </div>
+
+            </div>
+
+            <div class="mt-4">
+                <h4><i class="fas fa-credit-card"></i> Phương thức thanh toán</h4>
+                <p>Thanh toán khi nhận hàng (COD)</p>
+            </div>
+
+            <div class="mt-4">
+                <h4><i class="fas fa-pencil"></i> Ghi chú</h4>
+
+                <textarea id="ghichu" name="ghichu" class="form-control" style="height:150px; width:100%;"></textarea>
+            </div>
+
+
+        </div>
+        <!--bên phải-->
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="row">
+                <div class="col-6">
+                    <b>TÊN SẢN PHẨM</b>
+                </div>
+                <div class="col-3">
+                    <b>SỐ LƯỢNG</b>
+                </div>
+                <div class="col-3">
+                    <b>TỔNG TIỀN</b>
+                </div>
+            </div>
+            <hr />
+            @{
+                double tongTienTatCa = Model.soLuong * Model.sanPham.GiaGoc;
+                double tongTienGiam = Model.soLuong * Model.sanPham.GiaGiam;
+                double soTienDaGiam = tongTienTatCa - tongTienGiam;
+                double voucherGiam = 0;
+                double thanhTien = 0;
+            }
+            <div class="row">
+                <div class="col-6 row">
+                    <div class="col-6">
+                        <img class="img-fluid" src="~/Images/Toys/@Model.sanPham.ImageSanPhams.FirstOrDefault().ImageURL" />
+                    </div>
+                    <div class="col-6">
+                        <p>@Model.sanPham.TenSanPham</p>
+                    </div>
+                </div>
+                <div class="col-3 text-center">
+                    <p>@Model.soLuong</p>
+                </div>
+                <div class="col-3 text-center">
+                    <p class="text-danger">@tongTienTatCa.ToString("N0") VNĐ</p>
+                    <p>@tongTienGiam.ToString("N0") VNĐ</p>
+                </div>
+            </div>
+            <hr />
+            <div class="mt-4">
+                <div class="row">
+                    <div class="col-6">
+                        <p>Tổng số sản phẩm:</p>
+                        <p>Tổng tiền:</p>
+                        <p>Giảm:</p>
+                        @if (Session["DisCount"] != null)
+                        {
+                            <p>Voucher:</p>
+                        }
+                        <p>Phí vận chuyển</p>
+                        <h4 class="text-danger">Thành tiền:</h4>
+                    </div>
+                    <div class="col-6" style="text-align: right">
+                        <p>@Model.soLuong</p>
+                        <p>@tongTienTatCa.ToString("N0") VNĐ</p>
+                        <p>@soTienDaGiam.ToString("N0") VNĐ</p>
+                        @if (Session["DisCount"] != null)
+                        {
+                            int discount = (int)Session["DisCount"];
+                            voucherGiam = tongTienTatCa * (discount / 100.0);
+                            <p>@voucherGiam.ToString("N0") VNĐ</p>
+                        }
+                        <p>0 VNĐ</p>
+                        @{
+                            thanhTien = tongTienTatCa - soTienDaGiam - voucherGiam;
+                        }
+                        <h4 class="text-danger">@thanhTien.ToString("N0") VNĐ</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt-4 d-flex justify-content-center">
+                <div class="">
+                    <input type="submit" name="submit" class="btn btn-danger rounded-5 fw-bold" style="width: 300px; height: 40px" value="THANH TOÁN" />
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+}
+<div class="mt-4">
+    @using (Html.BeginForm("NhapVoucherChoThanhToanNgay", "Voucher", FormMethod.Post))
+    {
+        <div class="d-flex">
+            <b class="my-auto">Mã giảm giá (Voucher) </b>&emsp;
+            @Html.TextBox("InputMaVoucher", null, new { @class = "form-control rounded-0", placeholder = "Nhập mã khuyến mãi..." })
+            @* dùng để load lại trang này *@
+            @Html.HiddenFor(model => model.soLuong)
+            @Html.HiddenFor(model => model.sanPham.MaSanPham)
+            <button type="submit" name="submitVoucher" class="btn btn-success rounded-0 my-0" style="width: 70px">
+                <i class="fas fa-dollar"></i>
+            </button>
+        </div>
+        if (TempData["SucessMessage"] != null)
+        {
+            <div class="alert alert-success mt-2">
+                @TempData["SucessMessage"]
+            </div>
+        }
+        if (TempData["FailMessage"] != null)
+        {
+            <div class="alert alert-danger mt-2">
+                @TempData["FailMessage"]
+            </div>
+        }
+    }
+</div>
+

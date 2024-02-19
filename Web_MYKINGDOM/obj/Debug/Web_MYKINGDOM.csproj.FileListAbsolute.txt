@@ -1,0 +1,474 @@
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.dll.config
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.pdb
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.exe
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.exe.config
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.rsp
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.exe
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.rsp
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.AppContext.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Collections.Immutable.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.IO.FileSystem.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Reflection.Metadata.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.exe
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.exe.config
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.rsp
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\VBCSCompiler.exe
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\VBCSCompiler.exe.config
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\Antlr3.Runtime.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.Web.Infrastructure.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\Newtonsoft.Json.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Helpers.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Mvc.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Optimization.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Razor.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Deployment.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Razor.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\WebGrease.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Helpers.xml
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Mvc.xml
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Optimization.xml
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Razor.xml
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.xml
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Deployment.xml
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Razor.xml
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\Newtonsoft.Json.xml
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\Antlr3.Runtime.pdb
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.AssemblyReference.cache
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.CoreCompileInputs.cache
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.CopyComplete
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.dll
+D:\Codes\Nam4\DotNet\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.pdb
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.dll.config
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.pdb
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.exe
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.exe.config
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.rsp
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.exe
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.exe.config
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.rsp
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Buffers.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Collections.Immutable.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Memory.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Numerics.Vectors.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Reflection.Metadata.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.exe
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.exe.config
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.rsp
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\VBCSCompiler.exe
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\VBCSCompiler.exe.config
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\Antlr3.Runtime.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.Web.Infrastructure.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\Newtonsoft.Json.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Helpers.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Mvc.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Optimization.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Razor.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Deployment.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Razor.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\WebGrease.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\Newtonsoft.Json.xml
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Helpers.xml
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Mvc.xml
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Razor.xml
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.xml
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Deployment.xml
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Razor.xml
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Optimization.xml
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\bin\Antlr3.Runtime.pdb
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.AssemblyReference.cache
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.CoreCompileInputs.cache
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.CopyComplete
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.dll
+D:\Download\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.pdb
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.AssemblyReference.cache
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.CoreCompileInputs.cache
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.dll.config
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.pdb
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.exe
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.exe.config
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.rsp
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.exe
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.exe.config
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.rsp
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Buffers.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Collections.Immutable.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Memory.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Numerics.Vectors.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Reflection.Metadata.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.exe
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.exe.config
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.rsp
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\VBCSCompiler.exe
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\VBCSCompiler.exe.config
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\Antlr3.Runtime.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.SqlServer.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.Web.Infrastructure.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\Newtonsoft.Json.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.Mvc.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Helpers.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Mvc.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Optimization.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Razor.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Deployment.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Razor.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\WebGrease.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.xml
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.SqlServer.xml
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\Newtonsoft.Json.xml
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.xml
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.Mvc.xml
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Helpers.xml
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Mvc.xml
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Razor.xml
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.xml
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Deployment.xml
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Razor.xml
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Optimization.xml
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\bin\Antlr3.Runtime.pdb
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.CopyComplete
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.dll
+E:\Codes\Year4\DotNET MVC\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.pdb
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.dll.config
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.pdb
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.exe
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.exe.config
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.rsp
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.exe
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.exe.config
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.rsp
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Buffers.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Collections.Immutable.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Memory.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Numerics.Vectors.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Reflection.Metadata.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.exe
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.exe.config
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.rsp
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\VBCSCompiler.exe
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\VBCSCompiler.exe.config
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Antlr3.Runtime.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.SqlServer.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.Web.Infrastructure.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Newtonsoft.Json.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.Mvc.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Helpers.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Mvc.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Optimization.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Razor.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Deployment.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Razor.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\WebGrease.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.SqlServer.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Newtonsoft.Json.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.Mvc.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Helpers.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Mvc.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Razor.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Deployment.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Razor.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Optimization.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Antlr3.Runtime.pdb
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.AssemblyReference.cache
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.CoreCompileInputs.cache
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.CopyComplete
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.pdb
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.Web.Delegation.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.Web.Deployment.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.Web.Deployment.Tracing.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.dll.config
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.pdb
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.exe
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.exe.config
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.rsp
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.exe
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.exe.config
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.rsp
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Buffers.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Collections.Immutable.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Memory.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Numerics.Vectors.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Reflection.Metadata.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.exe
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.exe.config
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.rsp
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\VBCSCompiler.exe
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\VBCSCompiler.exe.config
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Antlr3.Runtime.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.SqlServer.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.Web.Delegation.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.Web.Deployment.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.Web.Deployment.Tracing.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.Web.Infrastructure.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Newtonsoft.Json.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.Mvc.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Helpers.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Mvc.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Optimization.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Razor.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Deployment.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Razor.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\WebGrease.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.SqlServer.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Newtonsoft.Json.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.Mvc.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Helpers.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Mvc.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Razor.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Deployment.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Razor.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Optimization.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\bin\Antlr3.Runtime.pdb
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.AssemblyReference.cache
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.CoreCompileInputs.cache
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.CopyComplete
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.pdb
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.dll.config
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.pdb
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.exe
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.exe.config
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.rsp
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.exe
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.exe.config
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.rsp
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Buffers.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Collections.Immutable.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Memory.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Numerics.Vectors.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Reflection.Metadata.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.exe
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.exe.config
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.rsp
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\VBCSCompiler.exe
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\VBCSCompiler.exe.config
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\Antlr3.Runtime.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.SqlServer.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.Web.Delegation.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.Web.Deployment.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.Web.Deployment.Tracing.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.Web.Infrastructure.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\Newtonsoft.Json.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.Mvc.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Helpers.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Mvc.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Optimization.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Razor.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Deployment.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Razor.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\WebGrease.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.SqlServer.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\Newtonsoft.Json.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.Mvc.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Helpers.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Mvc.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Razor.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Deployment.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Razor.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Optimization.xml
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\bin\Antlr3.Runtime.pdb
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.AssemblyReference.cache
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.CoreCompileInputs.cache
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.CopyComplete
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.dll
+D:\Codes\Nam4\DotNet\DoAnChuyenNganh_NopCaiNay\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.pdb
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.dll.config
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\Web_MYKINGDOM.pdb
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.exe
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.exe.config
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csc.rsp
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.exe
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.exe.config
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\csi.rsp
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Buffers.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Collections.Immutable.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Memory.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Numerics.Vectors.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Reflection.Metadata.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.exe
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.exe.config
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\vbc.rsp
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\VBCSCompiler.exe
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\roslyn\VBCSCompiler.exe.config
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\Antlr3.Runtime.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.SqlServer.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.Web.Delegation.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.Web.Deployment.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.Web.Deployment.Tracing.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.Web.Infrastructure.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\Newtonsoft.Json.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.Mvc.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Helpers.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Mvc.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Optimization.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Razor.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Deployment.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Razor.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\WebGrease.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\EntityFramework.SqlServer.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\Newtonsoft.Json.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\PagedList.Mvc.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Helpers.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Mvc.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Razor.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Deployment.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.WebPages.Razor.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\System.Web.Optimization.xml
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\bin\Antlr3.Runtime.pdb
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.AssemblyReference.cache
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.CoreCompileInputs.cache
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.csproj.CopyComplete
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.dll
+E:\Codes\Year4\AllDoAn\DoAnChuyenNganh\CNTT115_XayDungPhanMemHeThongMYKINGDOM\3. Demo\Web_MYKINGDOM\Web_MYKINGDOM\obj\Debug\Web_MYKINGDOM.pdb

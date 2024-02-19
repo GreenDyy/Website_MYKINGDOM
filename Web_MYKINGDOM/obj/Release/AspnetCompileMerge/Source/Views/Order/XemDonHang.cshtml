@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewBag.Title = "XemDonHang";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<Web_MYKINGDOM.Models.DonHang>
+
+<style>
+    .filter:hover .dropdown {
+        display: block;
+    }
+
+    .dropdown {
+        z-index: 9999;
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+        .dropdown a {
+            padding: 12px 16px;
+        }
+
+            .dropdown a:hover {
+                background-color: #f1f1f1;
+            }
+</style>
+
+@if (ViewBag.ThongBaoDonHang != null)
+{
+    <h3 class="text-danger text-center my-lg-4">@ViewBag.ThongBaoDonHang</h3>
+    <div class="d-flex justify-content-center my-lg-4">
+        <a class="btn btn-danger rounded-5 fw-bold" style="width: 200px" href="@Url.Action("Index", "Home")">Quay lại trang chủ</a>
+    </div>
+}
+else
+{
+    <div>
+        <h4>Đơn hàng của bạn</h4>
+
+        <div class="filter">
+            <a class="nav-link" href="@Url.Action("XemDonHang", "Order", new {filter = "TatCa"})"><i class="fas fa-filter fs-4"></i>&ensp;Lọc đơn hàng</a>
+            <div class="dropdown">
+                <a class="dropdown-item" href="@Url.Action("XemDonHang", "Order", new {filter = "Đang Chờ Xử Lý"})">Đang Chờ Xử Lý</a>
+                <a class="dropdown-item" href="@Url.Action("XemDonHang", "Order", new {filter = "Đã Xác Nhận Đơn Hàng"})">Đã Xác Nhận Đơn Hàng</a>
+                <a class="dropdown-item" href="@Url.Action("XemDonHang", "Order", new {filter = "Đang Lấy Hàng"})">Đang Lấy Hàng</a>
+                <a class="dropdown-item" href="@Url.Action("XemDonHang", "Order", new {filter = "Đang Giao Hàng"})">Đang Giao Hàng</a>
+                <a class="dropdown-item" href="@Url.Action("XemDonHang", "Order", new {filter = "Giao Hàng Thành Công"})">Giao Hàng Thành Công</a>
+            </div>
+        </div>
+
+        <div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Mã đơn hàng</th>
+                        <th>Ngày đặt</th>
+                        <th>Tổng tiền</th>
+                        <th>Trạng thái</th>
+                        <th>Ghi chú</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.MaDonHang</td>
+                            <td>@item.NgayDatHang.Date.ToString("dd/MM/yyyy")</td>
+                            <td><i>@item.TongTien.ToString("N0") VNĐ</i></td>
+                            <td>@item.TrangThai</td>
+                            <td>@item.GhiChu</td>
+                            <td><a class="btn btn-success rounded-5" href="@Url.Action("XemChiTietDonHang", "Order", new {item.MaDonHang})">Xem chi tiết</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+
+

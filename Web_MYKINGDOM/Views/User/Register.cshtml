@@ -1,0 +1,142 @@
+﻿
+@{
+    ViewBag.Title = "Đăng ký";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Web_MYKINGDOM.ViewModels.ThongTinKhachHangChiTietDataView
+
+<div class="my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <div class="card">
+
+                <div class="card-header">
+                    <div class="d-flex justify-content-center"><img class="img-fluid" src="~/Images/Logo/logo_mykingdom.png" /></div>
+                </div>
+
+                <div class="card-body mx-auto">
+                    @using (Html.BeginForm("Register", "User", FormMethod.Post, new { @class = "mx-auto" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-group row mt-3">
+                            <div class="col-4" style="white-space: nowrap;">
+                                @Html.LabelFor(m => m.TaiKhoan, "Tài khoản ", new { @class = "col-form-label fw-bold" })
+                                <span class="text-danger">*</span>
+                            </div>
+
+                            <div class="col-8" style="width: 300px">
+                                @Html.TextBoxFor(m => m.TaiKhoan, "", new { @class = "form-control", @placeholder = "Nhập tài khoản" })
+                                @Html.ValidationMessageFor(m => m.TaiKhoan, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group row mt-3">
+                            <div class="col-4" style="white-space: nowrap;" s>
+                                @Html.LabelFor(m => m.MatKhauMoi, "Mật khẩu ", new { @class = "col-form-label fw-bold" })
+                                <span class="text-danger">*</span>
+                            </div>
+                            <div class="col-8" style="width: 300px">
+                                @Html.PasswordFor(m => m.MatKhauMoi, new { @class = "form-control", @placeholder = "Nhập mật khẩu" })
+                                @Html.ValidationMessageFor(m => m.MatKhauMoi, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group row mt-3">
+                            <div class="col-4" style="white-space: nowrap;">
+                                @Html.LabelFor(m => m.XacNhanMatKhauMoi, "Xác nhận mật khẩu ", new { @class = "col-form-label fw-bold" })
+                                <span class="text-danger">*</span>
+                            </div>
+
+                            <div class="col-8" style="width: 300px">
+                                @Html.PasswordFor(m => m.XacNhanMatKhauMoi, new { @class = "form-control", @placeholder = "Nhập lại mật khẩu" })
+                                @Html.ValidationMessageFor(m => m.XacNhanMatKhauMoi, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group row mt-3">
+                            <div class="col-4" style="white-space: nowrap;">
+                                @Html.LabelFor(m => m.khachHang.HoTenDem, "Họ tên đệm ", new { @class = "col-form-label fw-bold" })
+                                <span class="text-danger">*</span>
+                            </div>
+
+                            <div class="col-8" style="width: 300px">
+                                @Html.TextBoxFor(m => m.khachHang.HoTenDem, "", new { @class = "form-control", @placeholder = "Nhập họ tên đệm" })
+                                @Html.ValidationMessageFor(m => m.khachHang.HoTenDem, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group row mt-3">
+                            <div class="col-4" style="white-space: nowrap;">
+                                @Html.LabelFor(m => m.khachHang.Ten, "Tên ", new { @class = "col-form-label fw-bold" })
+                                <span class="text-danger">*</span>
+                            </div>
+
+                            <div class="col-8" style="width: 300px">
+                                @Html.TextBoxFor(m => m.khachHang.Ten, "", new { @class = "form-control", @placeholder = "Nhập tên" })
+                                @Html.ValidationMessageFor(m => m.khachHang.Ten, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group row mt-3">
+                            <div class="col-4" style="white-space: nowrap;">
+                                @Html.LabelFor(m => m.khachHang.SoDienThoai, "Số điện thoại ", new { @class = "col-form-label fw-bold" })
+                                <span class="text-danger">*</span>
+                            </div>
+
+
+                            <div class="col-8" style="width: 300px">
+                                @Html.TextBoxFor(m => m.khachHang.SoDienThoai, "", new { @class = "form-control", @placeholder = "Nhập SĐT" })
+                                @Html.ValidationMessageFor(m => m.khachHang.SoDienThoai, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group row mt-3">
+                            <div class="col-4" style="white-space: nowrap;">
+                                @Html.LabelFor(m => m.khachHang.Email, "Email ", new { @class = "col-form-label fw-bold" })
+                                <span class="text-danger">*</span>
+                            </div>
+
+                            <div class="col-8" style="width: 300px">
+                                @Html.TextBoxFor(m => m.khachHang.Email, "", new { @class = "form-control", @placeholder = "Nhập email" })
+                                @Html.ValidationMessageFor(m => m.khachHang.Email, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group row mt-3">
+                            <div class="col-4" style="white-space: nowrap;">
+                                @Html.LabelFor(m => m.khachHang.DiaChi, "Địa chỉ ", new { @class = "col-form-label fw-bold" })
+                                <span class="text-danger">*</span>
+                            </div>
+                            <div class="col-8" style="width: 300px">
+                                @Html.TextBoxFor(m => m.khachHang.DiaChi, "", new { @class = "form-control", @placeholder = "Nhập địa chỉ" })
+                                @Html.ValidationMessageFor(m => m.khachHang.DiaChi, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-3 d-flex justify-content-center">
+                            <div class="col-8">
+                                <input type="submit" name="submit" class="btn btn-danger rounded-5 fw-bold" style="width: 100%;" value="ĐĂNG KÝ" />
+                            </div>
+                        </div>
+
+                        @Html.ValidationSummary(true, "", new { @class = "text-center text-danger" })
+                        if (TempData["ThongBao"] != null)
+                        {
+                            <div class="alert alert-danger text-center mt-3 text-decoration-none">
+                                @TempData["ThongBao"]
+                            </div>
+                        }
+
+                        <div class="form-group mt-3 d-flex justify-content-center">
+                            <small class="text-center">Bạn đã có tài khoản?<span><a class="nav-link text-danger" href="@Url.Action("Login", "User")">Đăng nhập ngay</a></span></small>
+                        </div>
+                    }
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,194 @@
+﻿
+@{
+    ViewBag.Title = "GIỎ HÀNG";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<Web_MYKINGDOM.Models.ChiTietGioHang>
+
+@if (ViewBag.ErrorNoLogin != null)
+{
+    <h3 class="text-danger text-center my-lg-4">@ViewBag.ErrorNoLogin</h3>
+    <div class="d-flex justify-content-center my-lg-4">
+        <a class="btn btn-danger rounded-5 fw-bold" style="width: 200px" href="@Url.Action("Login", "User")">ĐĂNG NHẬP</a>
+    </div>
+
+}
+
+else if (ViewBag.ErrorNoProduct != null)
+{
+    <h3 class="text-danger text-center my-lg-4">@ViewBag.ErrorNoProduct</h3>
+    <div class="d-flex justify-content-center my-lg-4">
+        <a class="btn btn-danger rounded-5 fw-bold" style="width: 200px" href="@Url.Action("Index", "Home")">Quay lại trang chủ</a>
+    </div>
+
+}
+
+else
+{
+    <!--Tính tiền-->
+
+    double soTienDaGiam = 0;
+    double tongTienTatCa = 0;
+    double voucherGiam = 0;
+
+    foreach (var ctgh in Model)
+    {
+        soTienDaGiam += (ctgh.SanPham.GiaGoc - ctgh.SanPham.GiaGiam) * ctgh.SoLuong;
+        tongTienTatCa += ctgh.SanPham.GiaGoc * ctgh.SoLuong;
+    }
+
+
+
+    <div>
+        <h4 class="mt-4">GIỎ HÀNG CỦA BẠN</h4>
+        @if (TempData["GioHangThayDoi"] != null)
+        {
+            <div class="alert alert-danger mt-2">
+                @TempData["GioHangThayDoi"]
+            </div>
+        }
+        <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <hr />
+                @foreach (var ctgh in Model)
+                {
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card rounded-3">
+                                <img class="card-img" src="~/Images/Toys/@ctgh.SanPham.ImageSanPhams.FirstOrDefault().ImageURL" />
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <a class="nav-link" href="#">@ctgh.SanPham.TenSanPham</a>
+                                    </div>
+                                    <div class="col-4">
+                                        <small class=" fw-bold" style="text-decoration-line: line-through">@ctgh.SanPham.GiaGoc.ToString("N0") VNĐ</small>
+                                        <small class=" fw-bold text-danger">@ctgh.SanPham.GiaGiam.ToString("N0") VNĐ</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mt-3">
+                                <a class="btn btn-outline-danger" id="btnXoa_@ctgh.MaSanPham" href="">Xoá</a>
+
+                                <script>
+                                    $(document).ready(function () {
+                                        $('[id^="btnXoa_"]').click(function () {
+                                            // Lấy mã sản phẩm từ id của nút
+                                            var masanpham = $(this).attr("id").split("_")[1];
+                                            $.ajax({
+                                                url: '@Url.Action("XoaKhoiGioHang", "Cart")',
+                                                type: 'POST',
+                                                data: { masanpham: masanpham },
+                                                success: function (result) {
+                                                    console.log(result);
+                                                    location.reload();
+                                                },
+                                                error: function (error) {
+                                                    console.log(error);
+                                                }
+                                            });
+                                        });
+                                    });
+                                </script>
+                                <a class="btn btn-outline-warning mx-4" href="~/Product/ChiTietSanpham?masanpham=@ctgh.MaSanPham">Sửa</a>
+                                <p class="mx-4">Số lượng: @ctgh.SoLuong</p>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+
+                <a class="btn btn-outline-dark rounded-0" href="@Url.Action("Index", "Home")">Tiếp tục mua sắm</a>
+
+                <div class="mt-4">
+                    @using (Html.BeginForm("NhapVoucher", "Voucher", FormMethod.Post))
+                    {
+                        <div class="d-flex">
+                            <b class="my-auto">Mã giảm giá (Voucher) </b>&emsp;
+                            @Html.TextBox("InputMaVoucher", null, new { @class = "form-control rounded-0", placeholder = "Nhập mã khuyến mãi..." })
+                            <button type="submit" class="btn btn-success rounded-0 my-0" style="width: 70px">
+                                <i class="fas fa-dollar"></i>
+                            </button>
+                        </div>
+                        if (TempData["SucessMessage"] != null)
+                        {
+                            <div class="alert alert-success mt-2">
+                                @TempData["SucessMessage"]
+                            </div>
+                        }
+                        if (TempData["FailMessage"] != null)
+                        {
+                            <div class="alert alert-danger mt-2">
+                                @TempData["FailMessage"]
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+            <!--Cột trống-->
+            <div class="col-lg-1 col-md-1 col-sm-12">
+
+            </div>
+            <!--Tóm tắt đơn hàng-->
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <div class="m-3">
+                    <H5>TÓM TẮT ĐƠN HÀNG</H5>
+                    <div class="row">
+                        <p class="col-8">TỔNG TIỀN:</p>
+                        <p class="col-4" style="text-align:right">@tongTienTatCa.ToString("N0") VNĐ</p>
+                    </div>
+                    <div class="row opacity-50">
+                        <p class="col-8">ĐÃ GIẢM:</p>
+                        <p class="col-4" style="text-align:right">@soTienDaGiam.ToString("N0") VNĐ</p>
+                    </div>
+                    @if (Session["DisCount"] != null)
+                    {
+                        int discount = (int)Session["DisCount"];
+                        voucherGiam = tongTienTatCa * (discount / 100.0);
+
+                        <div class="row opacity-50">
+                            <p class="col-8">VOUCHER:</p>
+                            <p class="col-4" style="text-align:right">@voucherGiam.ToString("N0") VNĐ</p>
+                        </div>
+                    }
+                    <div class="row">
+                        <p class="col-8">VẬN CHUYỂN (GIAO HÀNG MIỄN PHÍ - FREE)</p>
+                        <p class="col-4" style="text-align:right">0 VNĐ</p>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <h5 class="col-6 fw-bold">THÀNH TIỀN</h5>
+                        @{
+                            double thanhTien;
+                            if (Session["DisCount"] != null)
+                            {
+                                int distCount = (int)Session["DisCount"];
+                                voucherGiam = tongTienTatCa * (distCount / 100.0);
+                                thanhTien = tongTienTatCa - soTienDaGiam - voucherGiam;
+                            }
+                            else
+                            {
+                                thanhTien = tongTienTatCa - soTienDaGiam;
+                            }
+                        }
+                        <h5 class="col-6 fw-bold" style="text-align:right">@thanhTien.ToString("N0") VNĐ</h5>
+                    </div>
+                    <hr />
+                    <div class="card border-0">
+                        <a class="btn btn-danger fs-5" href="@Url.Action("ThanhToan", "Order")">TIẾN HÀNH THANH TOÁN</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+}
+
+

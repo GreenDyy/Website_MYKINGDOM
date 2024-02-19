@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="~/Images/Logo/logo_tab.jpg" type="image/x-icon" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+    <style>
+        body {
+            font-family: Segoe UI Variable Display, Helvetica, sans-serif;
+        }
+
+
+        .navbar-two {
+            position: sticky;
+            z-index: 9998;
+            top: 0;
+        }
+
+        .cart-icon-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .cart-badge {
+            position: absolute;
+            bottom: 20px;
+            right: 0;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 13px;
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+    @*dropdown gioitinh*@
+    <style>
+        .nav-item:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown {
+            z-index: 9999;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+            .dropdown a {
+                padding: 12px 16px;
+            }
+
+                .dropdown a:hover {
+                    background-color: #f1f1f1;
+                }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-light">
+        <div class="container" style="font-weight: bold; ">
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse-one">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-collapse-one">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item my-auto" style="margin-right: 20px">
+                        <a class="navbar-brand mr-sm-5" href="~/Home/Index">
+                            <img class="img-fluid" src="~/Images//Logo/logo_mykingdom.png">
+                        </a>
+                    </li>
+
+                    <li class="nav-item my-auto" style="margin-right: 20px">
+                        <div class="input-group">
+                            @using (Html.BeginForm("TimKiemSanPham", "Category", FormMethod.Get))
+                            {
+                                <div class="d-flex">
+                                    @Html.TextBox("SearchString", null, new { @class = "form-control rounded-start-pill", placeholder = "Tìm kiếm sản phẩm..." })
+                                    <button type="submit" class="btn btn-success rounded-end-pill" style="width: 70px">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            }
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item my-auto" style="margin-right: 20px">
+                        @if (Session["IDUser"] != null)
+                        {
+                            <a class="nav-link" href="@Url.Action("UserAccount", "User")">
+                                <i class="fas fa-user fs-4"></i>&ensp;Xin chào!, @Session["TenKhachHang"]
+                            </a>
+                            <div class="dropdown">
+                                <a class="dropdown-item" href="~/User/UserAccount">Tài khoản</a>
+                                <a class="dropdown-item" href="@Url.Action("XemDonHang", "Order")">Tình trạng đơn hàng</a>
+                                <a class="dropdown-item" href="~/User/Logout">Đăng xuất</a>
+                            </div>
+                        }
+                        else
+                        {
+                            <a class="nav-link" href="~/User/Login"><i class="fas fa-user fs-4"></i>&ensp;TÀI KHOẢN</a>
+                            <div class="dropdown">
+                                <a class="dropdown-item" href="~/User/Login">Tài khoản</a>
+                                <a class="dropdown-item" href="~/User/Login">Đăng nhập</a>
+                                <a class="dropdown-item" href="~/User/Register">Đăng ký</a>
+                            </div>
+                        }
+
+
+                    </li>
+
+                    <li class="nav-item my-auto" style="margin-right: 20px">
+                        @if (Session["IDUser"] != null)
+                        {
+                            <a class="nav-link" href="@Url.Action("Cart", "Cart")">
+                                <div class="cart-icon-container">
+                                    <i class="fas fa-cart-shopping fs-4"></i><span class="cart-badge">@Session["CartQuantity"]</span>
+                                </div>
+                                GIỎ HÀNG
+                            </a>
+                        }
+                        else
+                        {
+                            <a class="nav-link" href="@Url.Action("Cart", "Cart")">
+                                <div class="cart-icon-container">
+                                    <i class="fas fa-cart-shopping fs-4"></i><span class="cart-badge">0</span>
+                                </div>
+                                GIỎ HÀNG
+                            </a>
+                        }
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    @*nav 2*@
+
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-danger navbar-dark navbar-two">
+        <div class="container-fluid" style="font-weight: bold; ">
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse-two">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-collapse-two">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item" style="margin-right: 40px">
+                        <a class="nav-link" href="~/Category/DoChoiMoi"> SẢN PHẨM MỚI</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 40px">
+                        <a class="nav-link" href="~/Category/DanhMuc"> SẢN PHẨM</a>
+
+                        <div class="dropdown">
+                            <!--lấy tên danh mục*-->
+                            @{
+                                var db = new Web_MYKINGDOM.Models.MYKINGDOMEntities();
+                                var danhmucs = db.DanhMucSanPhams.ToList();
+
+                            }
+                            @foreach (var danhmuc in danhmucs)
+                            {
+                                <a class="dropdown-item" href="~/Category/DanhMuc?madanhmuc=@danhmuc.MaDanhMuc">@danhmuc.TenDanhMuc</a>
+                            }
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item" style="margin-right: 40px">
+                        <a class="nav-link" href="~/Category/DoChoiTheoGioiTinh?gender=UNISEX"> GIỚI TÍNH</a>
+                        <div class="dropdown">
+                            <a class="dropdown-item" href="~/Category/DoChoiTheoGioiTinh?gender=BOY">BÉ TRAI</a>
+                            <a class="dropdown-item" href="~/Category/DoChoiTheoGioiTinh?gender=GIRL">BÉ GÁI</a>
+                            <a class="dropdown-item" href="~/Category/DoChoiTheoGioiTinh?gender=UNISEX">UNISEX</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item" style="margin-right: 40px">
+                        <a class="nav-link" href="~/Category/DoChoiTheoThuongHieu?mathuonghieu=1"> THƯƠNG HIỆU</a>
+                        <div class="dropdown">
+                            @foreach (var thuonghieu in db.ThuongHieux.ToList())
+                            {
+                                <a class="dropdown-item" href="~/Category/DoChoiTheoThuongHieu?mathuonghieu=@thuonghieu.MaThuongHieu">@thuonghieu.TenThuongHieu</a>
+                            }
+                        </div>
+                    </li>
+
+                    <li class="nav-item" style="margin-right: 40px">
+                        <a class="nav-link" href="#"> ƯU ĐÃI</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <img class="w-100 h-auto" src="~/Images/Wallpapers/wallpaper3.png">
+    </div>
+
+    <div class="container body-content">
+
+
+        @RenderBody()
+
+        <hr />
+
+
+    </div>
+
+    <div class="bg-light">
+        <footer class="container p-4">
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <b>HOTLINE CHĂM SÓC KHÁCH HÀNG</b>
+                    <h1 class="fw-bold text-danger">19001208</h1>
+                    <p class="fst-italic">Từ thứ Hai đến thứ Bảy (08:00 - 17:00)</p>
+                    <p class="fst-italic">Chủ nhật (08:00 - 12:00)</p>
+                    <a class="nav-link fst-italic" href="#"><i class="fas fa-envelope"></i>  hotro@mykingdom.com.vn</a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <h5>ĐIỀU KHOẢN & CHÍNH SÁCH</h5>
+                    <a class="nav-link mt-2" href="~/DieuKhoanChinhSachHoTro/DieuKhoanDieuKien">- Điều khoản điều kiện</a>
+                    <a class="nav-link mt-2" href="~/DieuKhoanChinhSachHoTro/ChinhSachGiaoHang">- Chính sách giao hàng</a>
+                    <a class="nav-link mt-2" href="~/DieuKhoanChinhSachHoTro/ChinhSachThanhToan">- Chính sách thanh toán</a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+                    <a class="nav-link mt-2" href="~/DieuKhoanChinhSachHoTro//ChinhSachBaoMat">- Chính sách bảo mật</a>
+                    <a class="nav-link mt-2" href="~/DieuKhoanChinhSachHoTro/ChinhSachBaoHanhDoiTra">- Chính sách bảo hành đổi trả hàng hóa</a>
+
+                    <a href="#"><img class="img-fluid w-50 h-auto" src="~/Images/Logo/bocongthuong.png" /></a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <h5 class="text-center">THEO DÕI MYKINGDOM</h5>
+                    <div class="text-center">
+                        <a href="~/Home/Index"><img src="~/Images/Logo/logo_mykingdom.png" /></a>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <a class="m-2" href="https://www.facebook.com/mykingdomvn/" target="_blank"><img src="~/Images/Logo/facebook.png" /></a>
+                        <a class="m-2" href="https://www.instagram.com/mykingdom_vietnam/" target="_blank"><img src="~/Images/Logo/instagram.png" /></a>
+                        <a class="m-2" href="https://www.youtube.com/channel/UCGeeH3wqD2AWB3NsyBwVrbw" target="_blank"><img src="~/Images/Logo/youtube.png" /></a>
+                    </div>
+                </div>
+
+            </div>
+            <br />
+            <br />
+            <div class="text-center">
+                <p>Công ty cổ phần Việt Tinh Anh, Số ĐKKD: 0309132354 do sở kế hoạch và đầu tư cấp ngày 14/07/2023</p>
+                <p>Địa chỉ: 66 đường số D5, khu Đô thị mới Him Lam, Phường Tân Hưng, Quận Tân Phú, TP. Hồ Chí Minh, Điện thoại: 0286.2638.600</p>
+            </div>
+
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

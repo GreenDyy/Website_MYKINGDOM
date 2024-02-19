@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "MYKINGDOM Vương Quốc Đồ Chơi";
+    Layout = "~/Views/Shared/_LayoutIndex.cshtml";
+
+}
+@model Web_MYKINGDOM.ViewModels.HomeIndexDataView
+<div class="container mt-4">
+
+    <div>
+        @* danh mục nổi bật *@
+        <h3 class="fw-bold mb-3">DANH MỤC ĐỒ CHƠI NỔI BẬT</h3>
+        <div class="row">
+
+            @foreach (var danhmuc in Model.danhMucs)
+            {
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <a class="nav-link" href="~/Category/DanhMuc?madanhmuc=@danhmuc.MaDanhMuc">
+                        <img class="img-fluid rounded-3" src="~/Images/DanhMuc/@danhmuc.ImageDanhMuc" />
+                        <p class="text-center">@danhmuc.TenDanhMuc</p>
+                    </a>
+                </div>
+            }
+
+        </div>
+
+        <hr />
+
+        @foreach (var danhmuc in Model.danhMucs)
+        {
+            <a class="btn btn-outline-success rounded-end-pill mb-3 fs-4 fw-bold" href="~/Category/DanhMuc?madanhmuc=@danhmuc.MaDanhMuc">@danhmuc.TenDanhMuc</a>
+
+            <div class="row">
+
+                @foreach (var sp in Model.SanPhamsTheoDanhMuc[danhmuc.MaDanhMuc])
+                {
+                    <div class="col-lg-3 col-md-3 col-sm-3 mb-4">
+                        <div class="m-1 card rounded-3 p-3">
+                            @if (sp.ImageSanPhams.FirstOrDefault() != null)
+                            {
+                                <a href="~/Product/ChiTietSanPham?masanpham=@sp.MaSanPham">
+                                    <img class="card-img img-fluid rounded-3" src="~/Images/Toys/@sp.ImageSanPhams.FirstOrDefault().ImageURL" />
+                                </a>
+                            }
+                            else
+                            {
+                                <a href="~/Product/ChiTietSanPham?masanpham=@sp.MaSanPham">
+                                    <img class="card-img img-fluid rounded-3" src="~/Images/Toys/null.jpg" />
+                                </a>
+                            }
+                            <a class="nav-link" href="~/Product/ChiTietSanPham?masanpham=@sp.MaSanPham">
+                                <p class="card-title fw-bold" style="height:60px">@sp.TenSanPham</p>
+                            </a>
+                            <div class="row fw-bold">
+                                <div class="col-6">
+                                    <p class="text-danger"><small>@sp.GiaGiam.ToString("N0") VNĐ</small></p>
+                                </div>
+                                <div class="col-6">
+                                    <p style="text-align:right; text-decoration-line:line-through"><small>@sp.GiaGoc.ToString("N0") VNĐ</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+
+</div>

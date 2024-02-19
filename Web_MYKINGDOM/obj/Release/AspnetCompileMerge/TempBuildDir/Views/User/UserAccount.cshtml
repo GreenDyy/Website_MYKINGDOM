@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Tài khoản";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Web_MYKINGDOM.Models.KhachHang
+
+@if (TempData["ThongBao"] != null)
+{
+    <div class="my-auto">
+        <h3 class="text-success text-center"><img style="width: 30px; height: 30px; margin-bottom: 6px" src="~/Images/Logo/checked.png">@TempData["ThongBao"]</h3>
+    </div>
+}
+
+<div class="row mt-4">
+
+    <div class="col-4">
+        <div class="">
+            <h4>Tài khoản của bạn</h4>
+            <a class="nav-link mb-3 fw-bold" href="@Url.Action("UserAccount", "User")">Tài khoản</a>
+            <a class="nav-link mb-3" href="@Url.Action("UserAccount", "User")">Thông tin tài khoản</a>
+            <a class="nav-link mb-3" href="@Url.Action("XemDonHang", "Order")">Lịch sử mua hàng</a>
+        </div>
+
+    </div>
+
+    <div class="col-8">
+        <div>
+            <h4>THÔNG TIN LIÊN HỆ</h4>
+            @{
+                string HoVaTen = Model.HoTenDem + " " + Model.Ten;
+            }
+            <p><b>Họ và tên: </b>@HoVaTen</p> <!--Tên kh-->
+            <p><b>Email: </b>@Model.Email</p>
+            <p><b>Số điện thoại: </b>@Model.SoDienThoai</p>
+            <a class="btn btn-danger rounded-5" style="width:200px" href="~/User/EditUser">Thay đổi thông tin</a>
+        </div>
+
+        <div class="mt-3">
+            <h4>ĐỊA CHỈ GIAO HÀNG</h4>
+            <p>@Model.DiaChi</p>
+            <a class="btn btn-success rounded-5" style="width:200px" href="@Url.Action("ChangePassword", "User")">Đổi mật khẩu</a>
+            <br />
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,226 @@
+﻿
+@{
+    ViewBag.Title = "Đồ chơi mới";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using PagedList;
+@using PagedList.Mvc;
+@model Web_MYKINGDOM.ViewModels.CategoryDoChoiMoiDataView
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<style>
+    /* Kiểu dáng cho phân trang */
+    .pagination-style ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .pagination-style li {
+        float: left;
+        border-right: 1px solid #bbb;
+    }
+
+        .pagination-style li:last-child {
+            border-right: none;
+        }
+
+        .pagination-style li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            .pagination-style li a:hover:not(.active) {
+                background-color: #4CAF50;
+            }
+
+    .pagination-style .active {
+        background-color: #4CAF50;
+    }
+
+    /* Các kiểu dáng khác cho các phần khác của trang */
+    /* Ví dụ: */
+    .other-section {
+        background-color: #f1f1f1;
+        padding: 20px;
+    }
+</style>
+
+<div>
+
+    <div class="row mt-4">
+        <div class="col-3">
+            <h6>DANH MỤC</h6>
+        </div>
+        <div class="col-9">
+            <div class="row">
+                <div class="col-4">
+                    <h5 class="fw-bold">@ViewBag.NamePage</h5>
+                </div>
+              
+                <div class="col-8">
+                    <p style="text-align:right">
+                        Sắp xếp theo:&ensp;
+                        <a class="text-decoration-none text-danger" href="~/Category/DoChoiMoi?sortOrder=PriceDesc">
+                            <i class="fas fa-sort-amount-desc"></i>
+                            Giá cao&ensp;
+                        </a>
+                        <a class="text-decoration-none text-danger" href="~/Category/DoChoiMoi?sortOrder=PriceAsc">
+                            <i class="fas fa-sort-amount-asc"></i>
+                            Giá thấp
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-3">
+            <!--Cột này cho danh mục-->
+            @foreach (var danhmuc in Model.danhMucs)
+            {
+                <a class="nav-link" href="~/Category/DanhMuc?madanhmuc=@danhmuc.MaDanhMuc">@danhmuc.TenDanhMuc</a>
+                <hr />
+            }
+
+            <script>
+                $(document).ready(function () {
+                    // Lấy giá trị của tham số từ URL
+                    var urlParams = new URLSearchParams(window.location.search);
+                    var genderParam = urlParams.get('gender');
+
+                    // Nếu có giá trị tham số gender, tự động chọn checkbox tương ứng
+                    if (genderParam) {
+                        $('input[name="GIOITINH"]').filter('[value="' + genderParam + '"]').prop('checked', true);
+                    }
+
+                    // Sự kiện khi checkbox thay đổi
+                    $('input[name="GIOITINH"]').change(function () {
+                        // Lấy giá trị của checkbox đang được chọn
+                        var selectedGender = $(this).val();
+
+                        // Uncheck tất cả các checkbox khác
+                        $('input[name="GIOITINH"]').not(this).prop('checked', false);
+
+                        // Chuyển hướng đến trang DoChoiTheoGioiTinh với tham số gender
+                        window.location.href = '/Category/DoChoiTheoGioiTinh?gender=' + selectedGender;
+                    });
+                });
+            </script>
+
+            <h6>GIỚI TÍNH</h6>
+            <form id="formGioiTinh">
+                <input type="checkbox" id="GIRL" name="GIOITINH" value="GIRL">
+                <label for="GIRL">BÉ GÁI</label><br>
+                <hr />
+                <input type="checkbox" id="BOY" name="GIOITINH" value="BOY">
+                <label for="BOY">BÉ TRAI</label><br>
+                <hr />
+                <input type="checkbox" id="UNISEX" name="GIOITINH" value="UNISEX">
+                <label for="BOY">UNISEX</label><br>
+                <hr />
+            </form>
+
+            <script>
+                $(document).ready(function () {
+                    // Lấy giá trị của tham số từ URL
+                    var urlParams = new URLSearchParams(window.location.search);
+                    var thuonghieuParam = urlParams.get('mathuonghieu');
+
+                    // Nếu có giá trị tham số gender, tự động chọn checkbox tương ứng
+                    if (thuonghieuParam) {
+                        $('input[name="BRAND"]').filter('[value="' + thuonghieuParam + '"]').prop('checked', true);
+                    }
+
+                    // Sự kiện khi checkbox thay đổi
+                    $('input[name="BRAND"]').change(function () {
+                        // Lấy giá trị của checkbox đang được chọn
+                        var selectedThuongHieu = $(this).val();
+
+                        // Uncheck tất cả các checkbox khác
+                        $('input[name="BRAND"]').not(this).prop('checked', false);
+
+                        window.location.href = '/Category/DoChoiTheoThuongHieu?mathuonghieu=' + selectedThuongHieu;
+                    });
+                });
+            </script>
+
+            <h6>THƯƠNG HIỆU</h6>
+            <form>
+                @foreach (var brand in Model.thuongHieus)
+                {
+                    <input type="checkbox" id="@brand.MaThuongHieu" name="BRAND" value="@brand.MaThuongHieu">
+                    <label for="@brand.MaThuongHieu">@brand.TenThuongHieu</label><br>
+                    <hr />
+                }
+
+            </form>
+
+        </div>
+        <div class="col-9">
+            <!-- Cột này hiện sản phẩm -->
+            <div class="row">
+                @foreach (var sp in Model.sanPhamPages)
+                {
+                    <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+                        <div class="m-1 card rounded-3 p-3">
+                            @if (sp.ImageSanPhams.FirstOrDefault() != null)
+                            {
+                                <a href="~/Product/ChiTietSanPham?masanpham=@sp.MaSanPham">
+                                    <img class="card-img img-fluid rounded-3" src="~/Images/Toys/@sp.ImageSanPhams.FirstOrDefault().ImageURL" />
+                                </a>
+                            }
+                            else
+                            {
+                                <a href="~/Product/ChiTietSanPham?masanpham=@sp.MaSanPham">
+                                    <img class="card-img img-fluid rounded-3" src="~/Images/Toys/null.jpg" />
+                                </a>
+                            }
+                            <a class="nav-link" href="~/Product/ChiTietSanPham?masanpham=@sp.MaSanPham">
+                                <p class="card-title fw-bold" style="height:60px">@sp.TenSanPham</p>
+                            </a>
+                            <div class="row fw-bold">
+                                <div class="col-6">
+                                    <p class="text-danger"><small>@sp.GiaGiam.ToString("N0") VNĐ</small></p>
+                                </div>
+                                <div class="col-6">
+                                    <p style="text-align:right; text-decoration-line:line-through"><small>@sp.GiaGoc.ToString("N0") VNĐ</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <hr />
+            <div class="pagination-style">
+                @{
+                    var pagedListRenderOptions = new PagedListRenderOptions
+                    {
+                        DisplayLinkToFirstPage = PagedListDisplayMode.Never,
+                        DisplayLinkToLastPage = PagedListDisplayMode.Never,
+                        DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+                        DisplayLinkToNextPage = PagedListDisplayMode.Always,
+                        MaximumPageNumbersToDisplay = 4, // Số lượng trang hiển thị tối đa
+                        DisplayEllipsesWhenNotShowingAllPageNumbers = false
+                    };
+                }
+                @Html.PagedListPager(Model.sanPhamPages, page => Url.Action("DoChoiMoi", new { page }))
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+

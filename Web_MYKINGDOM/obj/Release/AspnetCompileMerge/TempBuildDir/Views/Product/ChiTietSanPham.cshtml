@@ -1,0 +1,239 @@
+﻿
+@{
+    ViewBag.Title = "ChiTietSanPham";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Web_MYKINGDOM.ViewModels.KhoVaChiTietSanPham
+
+<style>
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        filter: invert(1);
+    }
+</style>
+
+<div>
+    <div class="row">
+
+        <!-- Carousel -->
+        <div class="col-6">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    @{
+                        int stt = 0;
+                    }
+                    @foreach (var image in Model.sanPham.ImageSanPhams)
+                    {
+                        if (stt == 0)
+                        {
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="@stt" class="active"></button>
+                        }
+                        else
+                        {
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="@stt"></button>
+                        }
+                        stt++;
+                    }
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    @{
+                        stt = 0;
+                    }
+                    @foreach (var image in Model.sanPham.ImageSanPhams) //1 chuỗi ảnh
+                    {
+                        if (stt == 0)
+                        {
+                            <div class="carousel-item active ">
+                                <img src="~/Images/Toys/@image.ImageURL" alt="@image.SanPham.TenSanPham" class="d-block w-100 rounded-4">
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="carousel-item">
+                                <img src="~/Images/Toys/@image.ImageURL" alt="@image.SanPham.TenSanPham" class="d-block w-100 rounded-4">
+                            </div>
+                        }
+                        stt++;
+
+                    }
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="col-6">
+
+            <h4>@Model.sanPham.TenSanPham</h4>
+            <p>Thương hiệu: <span>@Model.sanPham.ThuongHieu.TenThuongHieu</span></p>
+            <h4 class="fw-bold text-danger">@Model.sanPham.GiaGiam.ToString("N0") VNĐ</h4>
+
+
+            <table class="table table-bordered my-3">
+                <tr>
+                    <th class=""><i class="fas fa-money"></i>  Hàng chính hãng, chứng nhận an toàn</th>
+                </tr>
+                <tr>
+                    <th class=""><i class="fas fa-cart"></i>  Miễn phí giao hàng toàn quốc đơn trên 500.000 VNĐ</th>
+                </tr>
+                <tr>
+                    <th class=""><i class="fas fa-phone"></i>  Liên hệ hỗ trợ: 1900.1208</th>
+                </tr>
+                <tr>
+                </tr>
+
+            </table>
+
+            <div class="m-2">
+                <input type="button" value="-" id="giam" />
+                <input type="text" class="text-center" style="width: 40px" id="soluong" value="1" />
+                <input type="button" value="+" id="tang" />
+            </div>
+
+            <script>
+                $(document).ready(function () {
+                    $("#giam").click(function () {
+                        var soluong = parseInt($("#soluong").val());
+                        if (soluong > 1) {
+                            soluong--;
+                        }
+                        $("#soluong").val(soluong);
+                    });
+
+                    $("#tang").click(function () {
+                        var soluong = parseInt($("#soluong").val());
+                        if (soluong < 99) {
+                            soluong++;
+                        }
+                        else {
+                            soluong = 99;
+                        }
+                        $("#soluong").val(soluong);
+                    });
+                });
+            </script>
+
+            @if (Model.SoLuongTrongKho != 0) //kt xem còn hàng ko
+            {
+                <div class="row mx-auto">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        @if (Session["IDUser"] == null)
+                        {
+                            <a class="btn btn-danger d-flex justify-content-center rounded-5" href="@Url.Action("Login", "User")">MUA NGAY</a>
+                        }
+                        else
+                        {
+                            <a id="btnMuaNgay" class="btn btn-danger d-flex justify-content-center rounded-5" href="#">MUA NGAY</a>
+                        }
+
+                    </div>
+
+                    <script>
+                        $(document).ready(function () {
+                            $("#btnMuaNgay").click(function () {
+                                var masp = @Model.sanPham.MaSanPham;
+                                var soluong = parseInt($("#soluong").val());
+                                var url = '@Url.Action("ThanhToanNgay", "Order")?masanpham=' + masp + '&soluong=' + soluong;
+                                window.location.href = url;
+                            });
+                         });
+                    </script>
+
+
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        @if (Session["IDUser"] == null)
+                        {
+                            <a class="btn btn-danger d-flex justify-content-center rounded-5" href="@Url.Action("Login", "User")">THÊM VÀO GIỎ HÀNG</a>
+                        }
+                        else
+                        {
+                            <a id="btnThemVaoGioHang" class="btn btn-danger d-flex justify-content-center rounded-5" href="#">THÊM VÀO GIỎ HÀNG</a>
+                        }
+                    </div>
+
+                    <script>
+                        $(document).ready(function () {
+                            $("#btnThemVaoGioHang").click(function () {
+                                var masp = @Model.sanPham.MaSanPham;
+                                var soluong = parseInt($("#soluong").val());
+
+                                $.ajax({
+                                    url: '@Url.Action("ThemVaoGioHang", "Cart")',
+                                    type: 'POST',
+                                    data: { masanpham: masp, soluong: soluong },
+                                    success: function (result) {
+                                        location.reload(true);
+                                        console.log(result);
+                                    },
+                                    error: function (error) {
+                                        console.log(error);
+                                    }
+                                });
+                            });
+                        });
+                    </script>
+
+                </div>
+
+                <div class="row mt-2">
+                    <h6 class="col-6 m-2">TÌNH TRẠNG: Còn @Model.SoLuongTrongKho sản phẩm</h6>
+                </div>
+                if (Session["CanhBaoSoLuong"] != null)
+                {
+                    <div class="alert alert-danger mt-2">
+                        @Session["CanhBaoSoLuong"]
+                    </div>
+                }
+            }
+            else
+            {
+                <h6 class="m-2">TÌNH TRẠNG: Tạm hết hàng</h6>
+            }
+        </div>
+
+    </div>
+
+    @* Mô tả sp *@
+    <div class="mt-5">
+        <p class="fw-bold">Mô tả sản phẩm</p>
+        <h3 class="fw-bold">@Model.sanPham.TenSanPham</h3>
+        <p>
+            @Model.sanPham.MoTa
+        </p>
+
+        <p class="fw-bold">Thông tin sản phẩm</p>
+        <div class="container">
+            <table class="table table-bordered mt-3 mb-3">
+                <tr>
+                    <th class="" style="width: 40%">Mã SP</th>
+                    <th>@Model.sanPham.MaSanPham</th>
+                </tr>
+                <tr>
+                    <th class="">Tên sản phẩm</th>
+                    <th>@Model.sanPham.TenSanPham</th>
+                </tr>
+                <tr>
+                    <th class="">Thương hiệu</th>
+                    <th>@Model.sanPham.ThuongHieu.TenThuongHieu</th>
+                </tr>
+                <tr>
+                    <th class="">Giới tính</th>
+                    <th>@Model.sanPham.GioiTinh</th>
+                </tr>
+
+            </table>
+        </div>
+
+    </div>
+
+</div>
+

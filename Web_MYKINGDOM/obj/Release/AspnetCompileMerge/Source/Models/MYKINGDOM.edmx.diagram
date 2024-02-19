@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c8ffbd068ba248e296bb808d10d6d600" Name="Diagram1" ZoomLevel="71">
+        <EntityTypeShape EntityType="MYKINGDOMModel.ChiTietDonHang" Width="1.5" PointX="5.25" PointY="8.375" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.ChiTietGioHang" Width="1.5" PointX="5.25" PointY="14.375" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.ChiTietHoaDon" Width="1.5" PointX="8.25" PointY="11.375" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.ChiTietHoaDonOffline" Width="1.5" PointX="5.25" PointY="11.375" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.ChiTietNhapKho" Width="1.5" PointX="8.25" PointY="8.375" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.DanhMucSanPham" Width="1.5" PointX="0.75" PointY="8.625" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.DonHang" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.GioHang" Width="1.5" PointX="3" PointY="15.5" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.HoaDon" Width="1.5" PointX="6" PointY="18" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.HoaDonOffline" Width="1.5" PointX="3" PointY="6.375" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.ImageSanPham" Width="1.5" PointX="5.25" PointY="27.75" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.KhachHang" Width="1.5" PointX="0.75" PointY="17.625" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.KhoHang" Width="1.5" PointX="5.25" PointY="25.125" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.NhanVien" Width="1.5" PointX="0.75" PointY="3.625" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.NhapKho" Width="1.5" PointX="6" PointY="4.375" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.SanPham" Width="1.5" PointX="3" PointY="10.25" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.TaiKhoanKhachHang" Width="1.5" PointX="3" PointY="20.75" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.TaiKhoanNhanVien" Width="1.5" PointX="3" PointY="24.125" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.ThuongHieu" Width="1.5" PointX="0.75" PointY="11.75" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.Voucher" Width="1.5" PointX="0.75" PointY="14.625" />
+        <EntityTypeShape EntityType="MYKINGDOMModel.VoucherKhachHang" Width="1.5" PointX="8" PointY="14.75" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__ChiTietDo__MaDon__571DF1D5" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__ChiTietDo__MaSan__5812160E" />
+        <AssociationConnector Association="MYKINGDOMModel.FK_MaGioHang_CTGH" />
+        <AssociationConnector Association="MYKINGDOMModel.FK_MaSanPham_CTGH" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__ChiTietHo__MaHoa__76969D2E" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__ChiTietHo__MaSan__778AC167" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__ChiTietHo__MaHoa__7F2BE32F" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__ChiTietHo__MaSan__00200768" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__ChiTietNh__MaNha__5EBF139D" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__ChiTietNh__MaSan__5FB337D6" />
+        <AssociationConnector Association="MYKINGDOMModel.FK_MaDanhMuc_SP" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__DonHang__MaKhach__52593CB8" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__DonHang__MaNhanV__534D60F1" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__DonHang__MaVouch__5441852A" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__HoaDon__MaDonHan__71D1E811" />
+        <AssociationConnector Association="MYKINGDOMModel.FK_MaKhachHang_GH" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__HoaDon__MaKhachH__73BA3083" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__HoaDon__MaNhanVi__72C60C4A" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__HoaDonOff__MaNha__7C4F7684" />
+        <AssociationConnector Association="MYKINGDOMModel.FK_MaSanPham_SP" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__TaiKhoanK__MaKha__44FF419A" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__VoucherKh__MaKha__4E88ABD4" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__KhoHang__MaSanPh__6477ECF3" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__NhapKho__TrangTh__5BE2A6F2" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__TaiKhoanN__MaNha__68487DD7" />
+        <AssociationConnector Association="MYKINGDOMModel.FK_MaThuongHieu_SP" />
+        <AssociationConnector Association="MYKINGDOMModel.FK__VoucherKh__MaVou__4F7CD00D" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

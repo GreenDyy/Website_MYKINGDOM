@@ -1,0 +1,808 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B2087078-AA37-4AF8-82C6-CF2F2B070977}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Web_MYKINGDOM</RootNamespace>
+    <AssemblyName>Web_MYKINGDOM</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44327</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\lib\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Delegation, Version=7.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Deployment.4.0.5\lib\net45\Microsoft.Web.Delegation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Deployment, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Deployment.4.0.5\lib\net45\Microsoft.Web.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Deployment.Tracing, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Deployment.4.0.5\lib\net45\Microsoft.Web.Deployment.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.3.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.3.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.1\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\DieuKhoanChinhSachHoTroController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\VoucherController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChiTietDonHang.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChiTietGioHang.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChiTietHoaDon.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChiTietHoaDonOffline.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChiTietNhapKho.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DanhMucSanPham.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DonHang.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GioHang.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HoaDon.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HoaDonOffline.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ImageSanPham.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\KhachHang.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\KhoHang.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MYKINGDOM.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MYKINGDOM.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MYKINGDOM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MYKINGDOM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MYKINGDOM.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NhanVien.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NhapKho.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SanPham.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TaiKhoanKhachHang.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TaiKhoanNhanVien.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ThuongHieu.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Voucher.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VoucherKhachHang.cs">
+      <DependentUpon>MYKINGDOM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\ChiTietDonHangVaKhachHangDataView.cs" />
+    <Compile Include="ViewModels\KhoVaChiTietSanPham.cs" />
+    <Compile Include="ViewModels\ThanhToanNgayDataView.cs" />
+    <Compile Include="ViewModels\ThongTinKhachHangChiTietDataView.cs" />
+    <Compile Include="ViewModels\CategoryDanhMucDataView.cs" />
+    <Compile Include="ViewModels\CategoryDoChoiMoiDataView.cs" />
+    <Compile Include="ViewModels\CategoryDoChoiTheoGioiTinhDataView.cs" />
+    <Compile Include="ViewModels\CategoryDoChoiTheoThuongHieuDataView.cs" />
+    <Compile Include="ViewModels\CategoryDoChoiTimKiemDataView.cs" />
+    <Compile Include="ViewModels\HomeIndexDataView.cs" />
+    <Compile Include="ViewModels\ThongTinKhachHangVaGioHangViewData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Images\ChinhSach\ChinhSachGiaoHang\chinhsachgiaohang.jpg" />
+    <Content Include="Images\ChinhSach\ChinhSachGiaoHang\chinhsachgiaohang2.jpg" />
+    <Content Include="Images\ChinhSach\ChinhSachGiaoHang\chinhsachgiaohang3.jpg" />
+    <Content Include="Images\ChinhSach\ChinhSachGiaoHang\chinhsachgiaohang4.jpg" />
+    <Content Include="Images\DanhMuc\danh-muc-bup-be.jpg" />
+    <Content Include="Images\DanhMuc\danh-muc-dong-vat.jpg" />
+    <Content Include="Images\DanhMuc\danh-muc-hoc-tap.jpg" />
+    <Content Include="Images\DanhMuc\danh-muc-lap-ghep.jpg" />
+    <Content Include="Images\DanhMuc\danh-muc-mam-non.jpg" />
+    <Content Include="Images\DanhMuc\danh-muc-mo-phong.jpg" />
+    <Content Include="Images\DanhMuc\danh-muc-robot.jpg" />
+    <Content Include="Images\DanhMuc\danh-muc-sang-tao.jpg" />
+    <Content Include="Images\DanhMuc\danh-muc-thoi-trang.jpg" />
+    <Content Include="Images\DanhMuc\danh-muc-thu-bong.jpg" />
+    <Content Include="Images\Logo\bocongthuong.png" />
+    <Content Include="Images\Logo\checked.png" />
+    <Content Include="Images\Logo\facebook.png" />
+    <Content Include="Images\Logo\instagram.png" />
+    <Content Include="Images\Logo\logo_mykingdom.png" />
+    <Content Include="Images\Logo\logo_tab.jpg" />
+    <Content Include="Images\Logo\youtube.png" />
+    <Content Include="Images\Toys\null.jpg" />
+    <Content Include="Images\Toys\sp100_img1.jpg" />
+    <Content Include="Images\Toys\sp100_img2.jpg" />
+    <Content Include="Images\Toys\sp100_img3.jpg" />
+    <Content Include="Images\Toys\sp100_img4.jpg" />
+    <Content Include="Images\Toys\sp10_img1.jpg" />
+    <Content Include="Images\Toys\sp10_img2.jpg" />
+    <Content Include="Images\Toys\sp10_img3.jpg" />
+    <Content Include="Images\Toys\sp10_img4.jpg" />
+    <Content Include="Images\Toys\sp11_img1.jpg" />
+    <Content Include="Images\Toys\sp11_img2.jpg" />
+    <Content Include="Images\Toys\sp11_img3.jpg" />
+    <Content Include="Images\Toys\sp11_img4.jpg" />
+    <Content Include="Images\Toys\sp12_img1.jpg" />
+    <Content Include="Images\Toys\sp12_img2.jpg" />
+    <Content Include="Images\Toys\sp12_img3.jpg" />
+    <Content Include="Images\Toys\sp12_img4.jpg" />
+    <Content Include="Images\Toys\sp13_img1.jpg" />
+    <Content Include="Images\Toys\sp13_img2.jpg" />
+    <Content Include="Images\Toys\sp13_img3.jpg" />
+    <Content Include="Images\Toys\sp13_img4.jpg" />
+    <Content Include="Images\Toys\sp14_img1.jpg" />
+    <Content Include="Images\Toys\sp14_img2.jpg" />
+    <Content Include="Images\Toys\sp15_img1.jpg" />
+    <Content Include="Images\Toys\sp15_img2.jpg" />
+    <Content Include="Images\Toys\sp15_img3.jpg" />
+    <Content Include="Images\Toys\sp15_img4.jpg" />
+    <Content Include="Images\Toys\sp16_img1.jpg" />
+    <Content Include="Images\Toys\sp16_img2.jpg" />
+    <Content Include="Images\Toys\sp16_img3.jpg" />
+    <Content Include="Images\Toys\sp16_img4.jpg" />
+    <Content Include="Images\Toys\sp17_img1.jpg" />
+    <Content Include="Images\Toys\sp17_img2.jpg" />
+    <Content Include="Images\Toys\sp17_img3.jpg" />
+    <Content Include="Images\Toys\sp17_img4.jpg" />
+    <Content Include="Images\Toys\sp18_img1.jpg" />
+    <Content Include="Images\Toys\sp18_img2.jpg" />
+    <Content Include="Images\Toys\sp18_img3.jpg" />
+    <Content Include="Images\Toys\sp18_img4.jpg" />
+    <Content Include="Images\Toys\sp19_img1.jpg" />
+    <Content Include="Images\Toys\sp19_img2.jpg" />
+    <Content Include="Images\Toys\sp19_img3.jpg" />
+    <Content Include="Images\Toys\sp19_img4.jpg" />
+    <Content Include="Images\Toys\sp1_img1.jpg" />
+    <Content Include="Images\Toys\sp1_img2.jpg" />
+    <Content Include="Images\Toys\sp1_img3.jpg" />
+    <Content Include="Images\Toys\sp1_img4.jpg" />
+    <Content Include="Images\Toys\sp20_img1.jpg" />
+    <Content Include="Images\Toys\sp20_img2.jpg" />
+    <Content Include="Images\Toys\sp20_img3.jpg" />
+    <Content Include="Images\Toys\sp20_img4.jpg" />
+    <Content Include="Images\Toys\sp21_img1.jpg" />
+    <Content Include="Images\Toys\sp21_img2.jpg" />
+    <Content Include="Images\Toys\sp21_img3.jpg" />
+    <Content Include="Images\Toys\sp21_img4.jpg" />
+    <Content Include="Images\Toys\sp22_img1.jpg" />
+    <Content Include="Images\Toys\sp22_img2.jpg" />
+    <Content Include="Images\Toys\sp22_img3.jpg" />
+    <Content Include="Images\Toys\sp22_img4.jpg" />
+    <Content Include="Images\Toys\sp23_img1.jpg" />
+    <Content Include="Images\Toys\sp23_img2.jpg" />
+    <Content Include="Images\Toys\sp23_img3.jpg" />
+    <Content Include="Images\Toys\sp23_img4.jpg" />
+    <Content Include="Images\Toys\sp24_img1.jpg" />
+    <Content Include="Images\Toys\sp24_img2.jpg" />
+    <Content Include="Images\Toys\sp24_img3.jpg" />
+    <Content Include="Images\Toys\sp24_img4.jpg" />
+    <Content Include="Images\Toys\sp25_img1.jpg" />
+    <Content Include="Images\Toys\sp25_img2.jpg" />
+    <Content Include="Images\Toys\sp26_img1.jpg" />
+    <Content Include="Images\Toys\sp26_img2.jpg" />
+    <Content Include="Images\Toys\sp26_img3.jpg" />
+    <Content Include="Images\Toys\sp27_img1.jpg" />
+    <Content Include="Images\Toys\sp27_img2.jpg" />
+    <Content Include="Images\Toys\sp27_img3.jpg" />
+    <Content Include="Images\Toys\sp28_img1.jpg" />
+    <Content Include="Images\Toys\sp28_img2.jpg" />
+    <Content Include="Images\Toys\sp28_img3.jpg" />
+    <Content Include="Images\Toys\sp28_img4.jpg" />
+    <Content Include="Images\Toys\sp29_img1.jpg" />
+    <Content Include="Images\Toys\sp29_img2.jpg" />
+    <Content Include="Images\Toys\sp29_img3.jpg" />
+    <Content Include="Images\Toys\sp29_img4.jpg" />
+    <Content Include="Images\Toys\sp2_img1.jpg" />
+    <Content Include="Images\Toys\sp2_img2.jpg" />
+    <Content Include="Images\Toys\sp2_img3.jpg" />
+    <Content Include="Images\Toys\sp2_img4.jpg" />
+    <Content Include="Images\Toys\sp30_img1.jpg" />
+    <Content Include="Images\Toys\sp30_img2.jpg" />
+    <Content Include="Images\Toys\sp30_img3.jpg" />
+    <Content Include="Images\Toys\sp30_img4.jpg" />
+    <Content Include="Images\Toys\sp31_img1.jpg" />
+    <Content Include="Images\Toys\sp31_img2.jpg" />
+    <Content Include="Images\Toys\sp31_img3.jpg" />
+    <Content Include="Images\Toys\sp31_img4.jpg" />
+    <Content Include="Images\Toys\sp32_img1.jpg" />
+    <Content Include="Images\Toys\sp32_img2.jpg" />
+    <Content Include="Images\Toys\sp32_img3.jpg" />
+    <Content Include="Images\Toys\sp32_img4.jpg" />
+    <Content Include="Images\Toys\sp33_img1.jpg" />
+    <Content Include="Images\Toys\sp33_img2.jpg" />
+    <Content Include="Images\Toys\sp33_img3.jpg" />
+    <Content Include="Images\Toys\sp33_img4.jpg" />
+    <Content Include="Images\Toys\sp34_img1.jpg" />
+    <Content Include="Images\Toys\sp34_img2.jpg" />
+    <Content Include="Images\Toys\sp34_img3.jpg" />
+    <Content Include="Images\Toys\sp34_img4.jpg" />
+    <Content Include="Images\Toys\sp35_img1.jpg" />
+    <Content Include="Images\Toys\sp35_img2.jpg" />
+    <Content Include="Images\Toys\sp35_img3.jpg" />
+    <Content Include="Images\Toys\sp35_img4.jpg" />
+    <Content Include="Images\Toys\sp36_img1.jpg" />
+    <Content Include="Images\Toys\sp36_img2.jpg" />
+    <Content Include="Images\Toys\sp36_img3.jpg" />
+    <Content Include="Images\Toys\sp36_img4.jpg" />
+    <Content Include="Images\Toys\sp37_img1.jpg" />
+    <Content Include="Images\Toys\sp37_img2.jpg" />
+    <Content Include="Images\Toys\sp37_img3.jpg" />
+    <Content Include="Images\Toys\sp38_img1.jpg" />
+    <Content Include="Images\Toys\sp38_img2.jpg" />
+    <Content Include="Images\Toys\sp38_img3.jpg" />
+    <Content Include="Images\Toys\sp39_img1.jpg" />
+    <Content Include="Images\Toys\sp39_img2.jpg" />
+    <Content Include="Images\Toys\sp39_img3.jpg" />
+    <Content Include="Images\Toys\sp39_img4.jpg" />
+    <Content Include="Images\Toys\sp3_img1.jpg" />
+    <Content Include="Images\Toys\sp3_img2.jpg" />
+    <Content Include="Images\Toys\sp3_img3.jpg" />
+    <Content Include="Images\Toys\sp3_img4.jpg" />
+    <Content Include="Images\Toys\sp40_img1.jpg" />
+    <Content Include="Images\Toys\sp40_img2.jpg" />
+    <Content Include="Images\Toys\sp40_img3.jpg" />
+    <Content Include="Images\Toys\sp40_img4.jpg" />
+    <Content Include="Images\Toys\sp41_img1.jpg" />
+    <Content Include="Images\Toys\sp41_img2.jpg" />
+    <Content Include="Images\Toys\sp41_img3.jpg" />
+    <Content Include="Images\Toys\sp41_img4.jpg" />
+    <Content Include="Images\Toys\sp42_img1.jpg" />
+    <Content Include="Images\Toys\sp42_img2.jpg" />
+    <Content Include="Images\Toys\sp42_img3.jpg" />
+    <Content Include="Images\Toys\sp42_img4.jpg" />
+    <Content Include="Images\Toys\sp43_img1.jpg" />
+    <Content Include="Images\Toys\sp43_img2.jpg" />
+    <Content Include="Images\Toys\sp43_img3.jpg" />
+    <Content Include="Images\Toys\sp43_img4.jpg" />
+    <Content Include="Images\Toys\sp44_img1.jpg" />
+    <Content Include="Images\Toys\sp44_img2.jpg" />
+    <Content Include="Images\Toys\sp44_img3.jpg" />
+    <Content Include="Images\Toys\sp44_img4.jpg" />
+    <Content Include="Images\Toys\sp45_img1.jpg" />
+    <Content Include="Images\Toys\sp45_img2.jpg" />
+    <Content Include="Images\Toys\sp45_img3.jpg" />
+    <Content Include="Images\Toys\sp45_img4.jpg" />
+    <Content Include="Images\Toys\sp46_img1.jpg" />
+    <Content Include="Images\Toys\sp46_img2.jpg" />
+    <Content Include="Images\Toys\sp46_img3.jpg" />
+    <Content Include="Images\Toys\sp46_img4.jpg" />
+    <Content Include="Images\Toys\sp47_img1.jpg" />
+    <Content Include="Images\Toys\sp47_img2.jpg" />
+    <Content Include="Images\Toys\sp47_img3.jpg" />
+    <Content Include="Images\Toys\sp48_img1.jpg" />
+    <Content Include="Images\Toys\sp48_img2.jpg" />
+    <Content Include="Images\Toys\sp48_img3.jpg" />
+    <Content Include="Images\Toys\sp48_img4.jpg" />
+    <Content Include="Images\Toys\sp49_img1.jpg" />
+    <Content Include="Images\Toys\sp49_img2.jpg" />
+    <Content Include="Images\Toys\sp49_img3.jpg" />
+    <Content Include="Images\Toys\sp4_img1.jpg" />
+    <Content Include="Images\Toys\sp4_img2.jpg" />
+    <Content Include="Images\Toys\sp4_img3.jpg" />
+    <Content Include="Images\Toys\sp4_img4.jpg" />
+    <Content Include="Images\Toys\sp50_img1.jpg" />
+    <Content Include="Images\Toys\sp50_img2.jpg" />
+    <Content Include="Images\Toys\sp50_img3.jpg" />
+    <Content Include="Images\Toys\sp51_img1.jpg" />
+    <Content Include="Images\Toys\sp51_img2.jpg" />
+    <Content Include="Images\Toys\sp51_img3.jpg" />
+    <Content Include="Images\Toys\sp51_img4.jpg" />
+    <Content Include="Images\Toys\sp52_img1.jpg" />
+    <Content Include="Images\Toys\sp52_img2.jpg" />
+    <Content Include="Images\Toys\sp52_img3.jpg" />
+    <Content Include="Images\Toys\sp52_img4.jpg" />
+    <Content Include="Images\Toys\sp53_img1.jpg" />
+    <Content Include="Images\Toys\sp53_img2.jpg" />
+    <Content Include="Images\Toys\sp53_img3.jpg" />
+    <Content Include="Images\Toys\sp53_img4.jpg" />
+    <Content Include="Images\Toys\sp54_img1.jpg" />
+    <Content Include="Images\Toys\sp54_img2.jpg" />
+    <Content Include="Images\Toys\sp54_img3.jpg" />
+    <Content Include="Images\Toys\sp54_img4.jpg" />
+    <Content Include="Images\Toys\sp55_img1.jpg" />
+    <Content Include="Images\Toys\sp55_img2.jpg" />
+    <Content Include="Images\Toys\sp55_img3.jpg" />
+    <Content Include="Images\Toys\sp55_img4.jpg" />
+    <Content Include="Images\Toys\sp56_img1.jpg" />
+    <Content Include="Images\Toys\sp56_img2.jpg" />
+    <Content Include="Images\Toys\sp56_img3.jpg" />
+    <Content Include="Images\Toys\sp56_img4.jpg" />
+    <Content Include="Images\Toys\sp57_img1.jpg" />
+    <Content Include="Images\Toys\sp57_img2.jpg" />
+    <Content Include="Images\Toys\sp57_img3.jpg" />
+    <Content Include="Images\Toys\sp57_img4.jpg" />
+    <Content Include="Images\Toys\sp58_img1.jpg" />
+    <Content Include="Images\Toys\sp58_img2.jpg" />
+    <Content Include="Images\Toys\sp58_img3.jpg" />
+    <Content Include="Images\Toys\sp58_img4.jpg" />
+    <Content Include="Images\Toys\sp59_img1.jpg" />
+    <Content Include="Images\Toys\sp59_img2.jpg" />
+    <Content Include="Images\Toys\sp59_img3.jpg" />
+    <Content Include="Images\Toys\sp59_img4.jpg" />
+    <Content Include="Images\Toys\sp5_img1.jpg" />
+    <Content Include="Images\Toys\sp5_img2.jpg" />
+    <Content Include="Images\Toys\sp5_img3.jpg" />
+    <Content Include="Images\Toys\sp5_img4.jpg" />
+    <Content Include="Images\Toys\sp60_img1.jpg" />
+    <Content Include="Images\Toys\sp60_img2.jpg" />
+    <Content Include="Images\Toys\sp60_img3.jpg" />
+    <Content Include="Images\Toys\sp60_img4.jpg" />
+    <Content Include="Images\Toys\sp61_img1.jpg" />
+    <Content Include="Images\Toys\sp61_img2.jpg" />
+    <Content Include="Images\Toys\sp61_img3.jpg" />
+    <Content Include="Images\Toys\sp62_img1.jpg" />
+    <Content Include="Images\Toys\sp62_img2.jpg" />
+    <Content Include="Images\Toys\sp63_img1.jpg" />
+    <Content Include="Images\Toys\sp63_img2.jpg" />
+    <Content Include="Images\Toys\sp63_img3.jpg" />
+    <Content Include="Images\Toys\sp63_img4.jpg" />
+    <Content Include="Images\Toys\sp64_img1.jpg" />
+    <Content Include="Images\Toys\sp64_img2.jpg" />
+    <Content Include="Images\Toys\sp64_img3.jpg" />
+    <Content Include="Images\Toys\sp64_img4.jpg" />
+    <Content Include="Images\Toys\sp65_img1.jpg" />
+    <Content Include="Images\Toys\sp65_img2.jpg" />
+    <Content Include="Images\Toys\sp65_img3.jpg" />
+    <Content Include="Images\Toys\sp65_img4.jpg" />
+    <Content Include="Images\Toys\sp66_img1.jpg" />
+    <Content Include="Images\Toys\sp66_img2.jpg" />
+    <Content Include="Images\Toys\sp66_img3.jpg" />
+    <Content Include="Images\Toys\sp66_img4.jpg" />
+    <Content Include="Images\Toys\sp67_img1.jpg" />
+    <Content Include="Images\Toys\sp67_img2.jpg" />
+    <Content Include="Images\Toys\sp67_img3.jpg" />
+    <Content Include="Images\Toys\sp67_img4.jpg" />
+    <Content Include="Images\Toys\sp68_img1.jpg" />
+    <Content Include="Images\Toys\sp68_img2.jpg" />
+    <Content Include="Images\Toys\sp68_img3.jpg" />
+    <Content Include="Images\Toys\sp69_img1.jpg" />
+    <Content Include="Images\Toys\sp69_img2.jpg" />
+    <Content Include="Images\Toys\sp69_img3.jpg" />
+    <Content Include="Images\Toys\sp6_img1.jpg" />
+    <Content Include="Images\Toys\sp6_img2.jpg" />
+    <Content Include="Images\Toys\sp6_img3.jpg" />
+    <Content Include="Images\Toys\sp6_img4.jpg" />
+    <Content Include="Images\Toys\sp70_img1.jpg" />
+    <Content Include="Images\Toys\sp70_img2.jpg" />
+    <Content Include="Images\Toys\sp70_img3.jpg" />
+    <Content Include="Images\Toys\sp70_img4.jpg" />
+    <Content Include="Images\Toys\sp71_img1.jpg" />
+    <Content Include="Images\Toys\sp71_img2.jpg" />
+    <Content Include="Images\Toys\sp72_img1.jpg" />
+    <Content Include="Images\Toys\sp72_img2.jpg" />
+    <Content Include="Images\Toys\sp73_img1.jpg" />
+    <Content Include="Images\Toys\sp73_img2.jpg" />
+    <Content Include="Images\Toys\sp74_img1.jpg" />
+    <Content Include="Images\Toys\sp74_img2.jpg" />
+    <Content Include="Images\Toys\sp75_img1.jpg" />
+    <Content Include="Images\Toys\sp75_img2.jpg" />
+    <Content Include="Images\Toys\sp76_img1.jpg" />
+    <Content Include="Images\Toys\sp76_img2.jpg" />
+    <Content Include="Images\Toys\sp77_img1.jpg" />
+    <Content Include="Images\Toys\sp77_img2.jpg" />
+    <Content Include="Images\Toys\sp77_img3.jpg" />
+    <Content Include="Images\Toys\sp77_img4.jpg" />
+    <Content Include="Images\Toys\sp78_img1.jpg" />
+    <Content Include="Images\Toys\sp78_img2.jpg" />
+    <Content Include="Images\Toys\sp78_img3.jpg" />
+    <Content Include="Images\Toys\sp79_img1.jpg" />
+    <Content Include="Images\Toys\sp79_img2.jpg" />
+    <Content Include="Images\Toys\sp79_img3.jpg" />
+    <Content Include="Images\Toys\sp7_img1.jpg" />
+    <Content Include="Images\Toys\sp7_img2.jpg" />
+    <Content Include="Images\Toys\sp7_img3.jpg" />
+    <Content Include="Images\Toys\sp7_img4.jpg" />
+    <Content Include="Images\Toys\sp80_img1.jpg" />
+    <Content Include="Images\Toys\sp80_img2.jpg" />
+    <Content Include="Images\Toys\sp80_img3.jpg" />
+    <Content Include="Images\Toys\sp80_img4.jpg" />
+    <Content Include="Images\Toys\sp81_img1.jpg" />
+    <Content Include="Images\Toys\sp81_img2.jpg" />
+    <Content Include="Images\Toys\sp81_img3.jpg" />
+    <Content Include="Images\Toys\sp81_img4.jpg" />
+    <Content Include="Images\Toys\sp82_img1.jpg" />
+    <Content Include="Images\Toys\sp82_img2.jpg" />
+    <Content Include="Images\Toys\sp82_img3.jpg" />
+    <Content Include="Images\Toys\sp82_img4.jpg" />
+    <Content Include="Images\Toys\sp83_img1.jpg" />
+    <Content Include="Images\Toys\sp83_img2.jpg" />
+    <Content Include="Images\Toys\sp83_img3.jpg" />
+    <Content Include="Images\Toys\sp83_img4.jpg" />
+    <Content Include="Images\Toys\sp84_img1.jpg" />
+    <Content Include="Images\Toys\sp84_img2.jpg" />
+    <Content Include="Images\Toys\sp84_img3.jpg" />
+    <Content Include="Images\Toys\sp85_img1.jpg" />
+    <Content Include="Images\Toys\sp85_img2.jpg" />
+    <Content Include="Images\Toys\sp85_img3.jpg" />
+    <Content Include="Images\Toys\sp85_img4.jpg" />
+    <Content Include="Images\Toys\sp86_img1.jpg" />
+    <Content Include="Images\Toys\sp86_img2.jpg" />
+    <Content Include="Images\Toys\sp86_img3.jpg" />
+    <Content Include="Images\Toys\sp86_img4.jpg" />
+    <Content Include="Images\Toys\sp87_img1.jpg" />
+    <Content Include="Images\Toys\sp87_img2.jpg" />
+    <Content Include="Images\Toys\sp87_img3.jpg" />
+    <Content Include="Images\Toys\sp87_img4.jpg" />
+    <Content Include="Images\Toys\sp88_img1.jpg" />
+    <Content Include="Images\Toys\sp88_img2.jpg" />
+    <Content Include="Images\Toys\sp88_img3.jpg" />
+    <Content Include="Images\Toys\sp88_img4.jpg" />
+    <Content Include="Images\Toys\sp89_img1.jpg" />
+    <Content Include="Images\Toys\sp89_img2.jpg" />
+    <Content Include="Images\Toys\sp89_img3.jpg" />
+    <Content Include="Images\Toys\sp89_img4.jpg" />
+    <Content Include="Images\Toys\sp8_img1.jpg" />
+    <Content Include="Images\Toys\sp8_img2.jpg" />
+    <Content Include="Images\Toys\sp8_img3.jpg" />
+    <Content Include="Images\Toys\sp8_img4.jpg" />
+    <Content Include="Images\Toys\sp90_img1.jpg" />
+    <Content Include="Images\Toys\sp90_img2.jpg" />
+    <Content Include="Images\Toys\sp90_img3.jpg" />
+    <Content Include="Images\Toys\sp90_img4.jpg" />
+    <Content Include="Images\Toys\sp91_img1.jpg" />
+    <Content Include="Images\Toys\sp91_img2.jpg" />
+    <Content Include="Images\Toys\sp91_img3.jpg" />
+    <Content Include="Images\Toys\sp91_img4.jpg" />
+    <Content Include="Images\Toys\sp92_img1.jpg" />
+    <Content Include="Images\Toys\sp92_img2.jpg" />
+    <Content Include="Images\Toys\sp92_img3.jpg" />
+    <Content Include="Images\Toys\sp92_img4.jpg" />
+    <Content Include="Images\Toys\sp93_img1.jpg" />
+    <Content Include="Images\Toys\sp93_img2.jpg" />
+    <Content Include="Images\Toys\sp93_img3.jpg" />
+    <Content Include="Images\Toys\sp93_img4.jpg" />
+    <Content Include="Images\Toys\sp94_img1.jpg" />
+    <Content Include="Images\Toys\sp94_img2.jpg" />
+    <Content Include="Images\Toys\sp94_img3.jpg" />
+    <Content Include="Images\Toys\sp95_img1.jpg" />
+    <Content Include="Images\Toys\sp95_img2.jpg" />
+    <Content Include="Images\Toys\sp95_img3.jpg" />
+    <Content Include="Images\Toys\sp95_img4.jpg" />
+    <Content Include="Images\Toys\sp96_img1.jpg" />
+    <Content Include="Images\Toys\sp96_img2.jpg" />
+    <Content Include="Images\Toys\sp96_img3.jpg" />
+    <Content Include="Images\Toys\sp96_img4.jpg" />
+    <Content Include="Images\Toys\sp97_img1.jpg" />
+    <Content Include="Images\Toys\sp97_img2.jpg" />
+    <Content Include="Images\Toys\sp97_img3.jpg" />
+    <Content Include="Images\Toys\sp97_img4.jpg" />
+    <Content Include="Images\Toys\sp98_img1.jpg" />
+    <Content Include="Images\Toys\sp98_img2.jpg" />
+    <Content Include="Images\Toys\sp98_img3.jpg" />
+    <Content Include="Images\Toys\sp98_img4.jpg" />
+    <Content Include="Images\Toys\sp99_img1.jpg" />
+    <Content Include="Images\Toys\sp99_img2.jpg" />
+    <Content Include="Images\Toys\sp99_img3.jpg" />
+    <Content Include="Images\Toys\sp99_img4.jpg" />
+    <Content Include="Images\Toys\sp9_img1.jpg" />
+    <Content Include="Images\Toys\sp9_img2.jpg" />
+    <Content Include="Images\Toys\sp9_img3.jpg" />
+    <Content Include="Images\Toys\sp9_img4.jpg" />
+    <Content Include="Images\Wallpapers\toystory2.jpg" />
+    <Content Include="Images\Wallpapers\wallpaper3.png" />
+    <Content Include="Models\MYKINGDOM.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MYKINGDOM.Context.cs</LastGenOutput>
+      <DependentUpon>MYKINGDOM.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\MYKINGDOM.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MYKINGDOM.edmx</DependentUpon>
+      <LastGenOutput>MYKINGDOM.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="Models\MYKINGDOM.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MYKINGDOM.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\MYKINGDOM.edmx.diagram">
+      <DependentUpon>MYKINGDOM.edmx</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\webmykingdom-001-site1 - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\webmykingdom-001-site1 - Web Deploy.pubxml" />
+    <None Include="Scripts\jquery-3.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.7.1.js" />
+    <Content Include="Scripts\jquery-3.7.1.min.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="TemplateEmail\GuiMail.html" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutIndex.cshtml" />
+    <Content Include="Views\Product\ChiTietSanPham.cshtml" />
+    <Content Include="Views\Category\DanhMuc.cshtml" />
+    <Content Include="Views\Cart\Cart.cshtml" />
+    <Content Include="Views\DieuKhoanChinhSachHoTro\ChinhSachGiaoHang.cshtml" />
+    <Content Include="Views\DieuKhoanChinhSachHoTro\DieuKhoanDieuKien.cshtml" />
+    <Content Include="Views\DieuKhoanChinhSachHoTro\ChinhSachBaoMat.cshtml" />
+    <Content Include="Views\DieuKhoanChinhSachHoTro\ChinhSachBaoHanhDoiTra.cshtml" />
+    <Content Include="Views\DieuKhoanChinhSachHoTro\ChinhSachThanhToan.cshtml" />
+    <Content Include="Views\User\UserAccount.cshtml" />
+    <Content Include="Views\Category\TimKiemSanPham.cshtml" />
+    <Content Include="Views\Category\DoChoiTheoGioiTinh.cshtml" />
+    <Content Include="Views\Category\DoChoiTheoThuongHieu.cshtml" />
+    <Content Include="Views\Category\DoChoiMoi.cshtml" />
+    <Content Include="Views\User\Register.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\User\EditUser.cshtml" />
+    <Content Include="Views\User\ChangePassword.cshtml" />
+    <Content Include="Views\Order\ThanhToan.cshtml" />
+    <Content Include="Views\Order\ThanhToanThanhCong.cshtml" />
+    <Content Include="Views\Order\XemDonHang.cshtml" />
+    <Content Include="Views\Order\XemChiTietDonHang.cshtml" />
+    <Content Include="Views\Order\ThanhToanNgay.cshtml" />
+    <Content Include="Views\Order\ThanhToanThatBai.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Views\Voucher\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\jquery-3.7.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.7.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52636</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44327/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
